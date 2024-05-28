@@ -1,8 +1,98 @@
-.stats-block{
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 1200px;
-    margin: 0 auto 80px auto;
+.stats-block {
+  max-width: 1500px;
+  margin: 0 auto 80px auto;
+  background: #000;
+  justify-content: space-evenly;
 }
 
+.separator {
+  display: flex;
+  margin: 0 auto;
+  flex-flow: column wrap;
+  max-width: 1200px;
+  gap: 60px;
+  padding: 80px;
+}
+.stats-block h2 {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fff;
+}
 
+.stats {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.stats h3 {
+  font-family: Poppins;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 76.8px;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  color: #f8db46;
+}
+.stats p {
+  font-family: Poppins;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 51.2px;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  color: #fff;
+}
+
+.carousel {
+
+    background: none !important;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  background: #fff;
+  gap: 60px;
+}
+.carousel button{
+    width: 44px;
+    height: 44px;
+    align-self: center;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+#imgs-carousel {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.dots-container{
+    display: flex;
+    margin: 0 auto;
+    max-width: 144px;
+    width: 100%;
+   
+
+}
+
+#dots{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255,0.20);
+    margin-right: 16px;
+}

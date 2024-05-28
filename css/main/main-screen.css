@@ -2,18 +2,20 @@
   display: flex;
   flex-flow: row wrap;
   max-width: 1200px;
-  margin: 0 auto 80px auto;
+  /* padding: 80px; */
+  margin: 0 auto  80px auto;
+  justify-content: space-evenly;
 }
 
 .img-container {
-  flex: 1 2 584px;
+  flex: 0 1 600px;
 }
 
 .info-block {
-  flex: 1 2 584px;
+  flex: 0 1 600px;
   display: flex;
   flex-flow: column nowrap;
-  /* justify-content: space-evenly; */
+  justify-content: space-evenly;
 }
 
 .info-block h1 {
