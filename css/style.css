@@ -24,3 +24,9 @@ img {
   display: block;
   max-width: 100%;
 }
+
+/* hide mobile components */
+
+.hide{
+  display: none;
+}
