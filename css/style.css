@@ -37,3 +37,8 @@ img {
 .hide{
   display: none;
 }
+
+/* replace background color of some one components */
+.separator {
+  background: #000;
+}
