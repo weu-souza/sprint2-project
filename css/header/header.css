@@ -56,12 +56,15 @@ nav {
 .phone {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   gap: 12px;
 }
 .phone img {
+  flex: 1 2 0px;
   margin-left: 2px;
 }
 .phone p {
+  flex: 1 2 144px;
   font-family: "Inter";
   font-size: 18px;
     line-height: 20px;
@@ -81,7 +84,11 @@ nav {
   cursor: pointer;
   
 }
+.btn-donate img{
+  flex: 1 2 0px;
+}
 .btn-donate span {
+  flex: 1 2 177px;
   font-family: "Poppins";
   font-weight: 700;
   font-size: 18px;

@@ -23,6 +23,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- header component -->
@@ -65,34 +72,48 @@
     <main>
       <!-- main screen component -->
       <article class="main-screen">
-        <section>
+        <section class="info-block">
+          <!-- here is main title -->
           <h1>Forever Homes Shelter</h1>
+          <!-- here is the text -->
           <p>
             Our mission is to rescue and provide rehabilitation to dogs and cats
             that are critically injured or neglected. We have already saved the
             lives of 10,000 animals. We are not just a rescue, we are a refuge.
           </p>
-          <p>Your Gift Helps Save Lives</p>
-          <div>
-            <button class="btn-donate">
-              <img src="img/heart-svg.svg" alt="icone de um coração" />
-              <span>Donate</span>
-            </button>
-            <button>
-              <img
-                src="img/dog-icon.svg"
-                alt="icone de cachorro para o botão"
-              />
-              <span>Apply to Adopt</span>
-            </button>
+          <div class="cat-block">
+            <!-- second title is here -->
+            <h2>Your Gift Helps Save Lives</h2>
+            <!-- here is 2  buttons -->
+            <div class="main-screen-buttons-container">
+              <!-- donate button start -->
+              <button class="btn-donate">
+                <img src="img/heart-svg.svg" alt="icone de um coração" />
+                <span>Donate</span>
+              </button>
+              <!-- donate button end -->
+
+              <!-- adopt button start -->
+              <button class="adopt-button">
+                <img
+                  src="img/dog-icon.svg"
+                  alt="icone de cachorro para o botão" width="32px" height="32px"/>
+                <span>Apply to Adopt</span>
+              </button>
+              <!-- adopt button end -->
+            </div>
+            <!-- end buttons -->
           </div>
         </section>
+        <!-- cat and dog image is here -->
         <img
-          src="img/cat-dog.png"
+        id="cat-image"
+          
           alt="imagem de um gato amarelo rajado e um cachorro pug e o gato está pensando em sua casa"
         />
       </article>
+      <!-- end main screen component -->
     </main>
   </body>
-  <script src="js/index.js"></script>
+  <script type="module" src="js/index.js"></script>
 </html>

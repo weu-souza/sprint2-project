@@ -1,0 +1,89 @@
+.main-screen {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  height: 555px;
+  margin: 0 auto;
+}
+
+.main-screen img {
+  flex: 1 2 584px;
+}
+
+.info-block {
+  flex: 1 2 584px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+}
+
+.info-block h1 {
+  font-family: "poppins";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 76.8px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #1e1f27;
+}
+
+.info-block p {
+  font-family: "Inter";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38.4px;
+  text-align: left;
+  color: #37383f;
+}
+
+.cat-block {
+  max-width: 584px;
+  width: 100%;
+}
+
+.cat-block h2 {
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 51.2px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.main-screen-buttons-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.adopt-button {
+    background: none;
+  display: flex;
+  align-items: center;
+  padding: 16px 32px;
+  gap: 8px;
+  border-radius: 32px;
+  cursor: pointer;
+  border: 2px solid #1e1f27;
+  margin-left: 32px;
+}
+.adopt-button img {
+  flex: 1 2 0px;
+}
+.adopt-button span {
+  flex: 1 2 153px;
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.main-img{
+    display: block;
+  max-width: 100%;
+    /* background-image: url(../../img/cat-dog.png); */
+    background: #000;
+}
+
+ @media (max-width: 500px){
+    
+}
