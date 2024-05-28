@@ -1,5 +1,12 @@
 @import url(header/header.css);
-@import url(main-screen/main-screen.css);
+@import url(main/main-screen.css);
+@import url(main/stats-block.css);
+@import url(main/donation-block.css);
+@import url(main/adopt-info-block.css);
+@import url(main/diference-block.css);
+@import url(main/adopt-block.css);
+@import url(main/subscription\ block.css);
+@import url(footer/footer.css);
 
 /* reset css */
 * {
