@@ -19,12 +19,16 @@
 /*  content block */
 .content-block {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   width: 100%;
   gap: 40px;
 }
+.content-block img{
+    flex: 1 2 0;
+}
 /* text container */
 .text-block {
+    flex: 1 2 500px;
   display: grid;
   grid-template-rows: auto 2fr 1fr;
 }
