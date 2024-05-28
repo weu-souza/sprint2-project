@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projeto-semana-4</title>
-   
 
     <!-- links fonts  -->
     <!-- inter -->
@@ -29,12 +28,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-     <!-- arquivo main css -->
-     <link rel="stylesheet" href="css/style.css" />
+    <!-- arquivo main css -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- header component -->
-   
+
     <header>
       <!-- Logo and menu: left options -->
       <nav>
@@ -72,8 +71,6 @@
 
     <!-- main component -->
     <main>
-
-
       <!-- main screen component -->
       <article class="main-screen">
         <section class="info-block">
@@ -87,11 +84,7 @@
           </p>
           <div class="img-container hide">
             <!-- src="img/Dog_Img.png" -->
-            <img
-            id="dog-image"
-              
-              alt="imagem de um pug com fundo azul"
-            />
+            <img id="dog-image" alt="imagem de um pug com fundo azul" />
           </div>
 
           <div class="cat-block">
@@ -101,7 +94,12 @@
             <div class="main-screen-buttons-container">
               <!-- donate button start -->
               <button class="btn-donate">
-                <img src="img/heart-svg.svg" alt="icone de um coração" width="25px" height="25px" />
+                <img
+                  src="img/heart-svg.svg"
+                  alt="icone de um coração"
+                  width="25px"
+                  height="25px"
+                />
                 <span>Donate</span>
               </button>
               <!-- donate button end -->
@@ -110,94 +108,206 @@
               <button class="adopt-button">
                 <img
                   src="img/dog-icon.svg"
-                  alt="icone de cachorro para o botão" width="32px" height="32px"/>
+                  alt="icone de cachorro para o botão"
+                  width="32px"
+                  height="32px"
+                />
                 <span>Apply to Adopt</span>
               </button>
               <!-- adopt button end -->
             </div>
             <!-- end buttons -->
           </div>
-
         </section>
         <!-- cat and dog image is here -->
         <div class="img-container">
           <!-- src="img/cat-dog.png" -->
           <img
-          id="cat-image"
-            
+            id="cat-image"
             alt="imagem de um gato amarelo rajado e um cachorro pug e o gato está pensando em sua casa"
           />
         </div>
-
       </article>
       <!-- end main screen component -->
       <!-- start stats block component -->
 
+      <div class="separator">
+        <article class="stats-block">
+          <h2>With your help, we accomplished these goals</h2>
 
-      <article class="stats-block">
-        <div class="separator">
+          <section class="stats">
+            <!-- text 1 -->
+            <div>
+              <h3>1400</h3>
+              <p>Animals Rescued</p>
+            </div>
+            <!-- text 2 -->
+            <div>
+              <h3>$1.4 Million</h3>
+              <p>Raised</p>
+            </div>
+            <!-- text 3 -->
+            <div>
+              <h3>940</h3>
+              <p>Tails Found a Home</p>
+            </div>
+          </section>
 
-        
-       <h2>With your help, we 
-        accomplished these goals</h2>
+          <section class="carousel">
+            <!-- button carrousel -->
+            <button><img src="img/left-carousel-button.svg" alt="" /></button>
+            <!-- carousel-imgs -->
+            <div id="imgs-carousel">
+              <img
+                src="img/carousel-imgs/1.png"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <img
+                src="img/carousel-imgs/2.png"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <img
+                src="img/carousel-imgs/3.png"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+              <img
+                src="img/carousel-imgs/4.png"
+                alt=""
+                width="200px"
+                height="200px"
+              />
+            </div>
+            <!-- button carousel -->
+            <button><img src="img/right-carousel-button.svg" alt="" /></button>
+          </section>
+          <!-- dots -->
+          <section class="dots-container">
+            <div id="dots"></div>
+            <div id="dots"></div>
+            <div id="dots"></div>
+            <div id="dots"></div>
+          </section>
+        </article>
+        <!-- end stats block component -->
+        <!-- start donation block component -->
 
-        <section class="stats">
-          <!-- text 1 -->
-          <div>
-            <h3>1400</h3>
-            <p>Animals Rescued</p>
-          </div>
-          <!-- text 2 -->
-          <div>
-            <h3>$1.4 Million</h3>
-            <p>Raised</p>
-          </div>
-          <!-- text 3 -->
-          <div>
-            <h3>940</h3>
-            <p>Tails Found a Home</p>
-          </div>
-        </section>
-        
-        <section class="carousel" >
-          <!-- button carrousel -->
-          <button> <img src="img/left-carousel-button.svg" alt=""> </button>
-          <!-- carousel-imgs -->
-          <div id="imgs-carousel" >
-            <img src="img/carousel-imgs/Dog_Img (1).png" alt="" style="background-color: aqua; border-radius: 50%;" width="200px" height="200px">
-            <img src="img/carousel-imgs/img_2.png" alt="" style="background-color: aqua; border-radius: 50%;" width="200px" height="200px">
-            <img src="img/carousel-imgs/img_4.png" alt="" style="background-color: aqua; border-radius: 50%;" width="200px" height="200px">
-            <img src="img/carousel-imgs/imh_3.png" alt="" style="background-color: aqua; border-radius: 50%;" width="200px" height="200px">
-          </div>
-          <!-- button carousel -->
-          <button> <img src="img/right-carousel-button.svg" alt=""> </button>
-
-        </section>
-        <!-- dots -->
-        <section class="dots-container">
-        <div id="dots"></div>  
-        <div id="dots"></div>  
-        <div id="dots"></div>  
-        <div id="dots"></div>  
-        </section>
+        <article class="donation-block">
+          <h2>With your donations we provide</h2>
+          <section class="card-container">
+            <!-- card 1 -->
+            <div class="card">
+              <div class="card-title">
+                <h3>Shelter</h3>
+                <img
+                  src="img/icons/shelter-icon.svg"
+                  alt=""
+                 
+                />
+              </div>
+              <p>
+                We provide shelter for many of our cats and dogs. In addition to
+                a roof over their heads, we pay for heat, food, water, and
+                electricity, and general maintenance.
+              </p>
+            </div>
+            <!-- card 2 -->
+            <div class="card">
+              <div class="card-title">
+                <h3>Vetting</h3>
+                <img
+                  src="img/icons/Vetting-icon.svg"
+                  alt=""
+                
+                />
+              </div>
+              <p>
+                We provide vet care to our cats and dogs. We take care of
+                general health assessments medications, vaccinations,
+                spay/neuter procedures, and other surgeries.
+              </p>
+            </div>
+            <!-- card 3 -->
+            <div class="card">
+              <div class="card-title">
+                <h3>Facilities</h3>
+                <img
+                  src="img/icons/Facilities-icon.svg"
+                  alt=""
+                
+                />
+              </div>
+              <p>
+                We currently utilize a facility in a dilapidated state, which
+                has necessitated significant investments to make it usable
+                again. We are still restoring the building to its full
+                potential.
+              </p>
+            </div>
+            <!-- card 4 -->
+            <div class="card">
+              <div class="card-title">
+                <h3>Transport</h3>
+                <img
+                  src="img/icons/Transport-icon.svg"
+                  alt=""
+                 
+                />
+              </div>
+              <p>
+                Each year, we transport over 600 dogs and 350 cats from kill
+                shelters and emergency distressing situations to hospitals or
+                our shelter, providing them with a second chance at life.
+              </p>
+            </div>
+            <!-- card 5 -->
+            <div class="card">
+              <div class="card-title">
+                <h3>Fosters</h3>
+                <img
+                  src="img/icons/Foster-icon.svg"
+                  alt=""
+                 
+                />
+              </div>
+              <p>
+                We're lucky to have a group of individuals who generously foster
+                our cats and dogs in their homes. We cover all their veterinary
+                needs and provide necessary food supplies.
+              </p>
+            </div>
+            <!-- card 6-->
+            <div class="card">
+              <div class="card-title">
+                <h3>Food</h3>
+                <img
+                  src="img/icons/Food-icon.svg"
+                  alt=""
+                
+                />
+              </div>
+              <p>
+                Each year, we nourish our cats and dogs with over 2,200 cans of
+                wet food and 1,600 pounds of dry food to ensure their well-being
+                and keep them content and thriving.
+              </p>
+            </div>
+            <!-- end card  -->
+          </section>
+        </article>
       </div>
-      </article>
-      <!-- end stats block component -->
-      <!-- start donation block component -->
-      
-      <article class="donation-block">
 
-      </article>
       <!-- end donation block component -->
       <!-- start adopt info block -->
-      <article class="adopt-info-block">
-
-      </article>
+      <article class="adopt-info-block"></article>
       <!-- end adopt info block -->
       <!-- start diference block -->
-      <article class="diference block">
-
-      </article>
+      <article class="diference block"></article>
       <!-- end diference block -->
       <!-- start adopt block -->
       <article class="adopt-block"></article>
@@ -205,9 +315,8 @@
       <!-- start subscription block -->
       <article class="subscription block"></article>
       <!-- end subscription block -->
-
     </main>
-<!-- start footer -->
+    <!-- start footer -->
     <footer></footer>
     <!-- end footer -->
   </body>

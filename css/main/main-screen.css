@@ -2,7 +2,6 @@
   display: flex;
   flex-flow: row wrap;
   max-width: 1200px;
-  /* padding: 80px; */
   margin: 0 auto  80px auto;
   justify-content: space-evenly;
 }
