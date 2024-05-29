@@ -1,6 +1,6 @@
 .donation-block {
   max-width: 1200px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto ;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

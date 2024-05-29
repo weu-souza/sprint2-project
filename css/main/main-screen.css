@@ -1,7 +1,7 @@
 .main-screen {
   display: flex;
   padding: 80px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto;
   max-width: 1200px;
   gap: 60px;
   justify-content: space-evenly;

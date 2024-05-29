@@ -2,7 +2,7 @@
 .adopt-info-block {
   display: flex;
   padding: 80px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto;
   flex-flow: column wrap;
   max-width: 1200px;
   gap: 60px;

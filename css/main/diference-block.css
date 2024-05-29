@@ -2,7 +2,7 @@
   max-width: 1200px;
   display: flex;
   padding: 80px;
-  margin: 0 auto 80px auto;
+  margin: 0 auto;
   flex-flow: column wrap;
   gap: 60px;
   color: #fff;
