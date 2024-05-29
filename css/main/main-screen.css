@@ -8,11 +8,11 @@
 }
 
 .img-container {
-  flex: 0 1 600px;
+  flex: 1 1 600px;
 }
 
 .info-block {
-  flex: 0 1 600px;
+  flex: 1 1 600px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-evenly;

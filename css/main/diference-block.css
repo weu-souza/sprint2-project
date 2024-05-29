@@ -9,11 +9,12 @@
 }
 .diference-title-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-between;
   width: 100%;
   align-content: center;
 }
+
 /* title-text */
 .diference-title-container h2 {
   font-family: "Poppins";
@@ -80,4 +81,19 @@
 }
 .bg-purple {
   background-color: #5758f1;
+}
+
+@media (max-width: 800px) {
+  .diference-title-container{
+    justify-content: initial;
+  
+  }
+  .diference-title-container h2 {
+    font-size:40px ;
+  }
+  .diference-title-container img {
+    width: 70px;
+    height: 70px;
+    align-self: center;
+  }
 }

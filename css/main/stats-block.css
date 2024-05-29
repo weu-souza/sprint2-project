@@ -52,11 +52,9 @@
 
 .carousel {
   background: none !important;
-  width: 100%;
   display: flex;
   margin: 0 auto;
   background: #fff;
-  gap: 60px;
 }
 .carousel button {
   width: 44px;
@@ -71,7 +69,11 @@
   display: flex;
   flex-flow: row wrap;
   width: 100%;
-  justify-content: space-between;
+  gap: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  
+  justify-content: space-evenly;
 }
 
 .dots-container {
@@ -87,4 +89,14 @@
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
   margin-right: 16px;
+}
+@media (max-width:800px) {
+  .stats-block{
+    max-width: 700px;
+  }
+}
+@media (max-width:500px) {
+  .stats-block{
+    max-width: 498px;
+  }
 }

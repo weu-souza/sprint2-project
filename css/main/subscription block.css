@@ -1,6 +1,6 @@
 .subscription-block {
   display: flex;
-  margin: 0 auto 80px auto;
+  margin: 0  auto;
   flex-flow: column wrap;
   max-width: 1200px;
   gap: 60px;
@@ -35,6 +35,7 @@
   max-width: 600px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding-bottom: 80px;
 }
