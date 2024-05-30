@@ -79,7 +79,7 @@
 .dots-container {
   display: flex;
   margin: 0 auto;
-  max-width: 144px;
+  max-width: 150px;
   width: 100%;
 }
 
@@ -90,11 +90,25 @@
   background-color: rgba(255, 255, 255, 0.2);
   margin-right: 16px;
 }
+
+.dots-active {
+  background-color: #fff !important;
+  transition: 0.4s;
+ 
+}
+
+
+.slide-right{animation:slide-right 0.4s linear both}@keyframes slide-right{0%{transform:translateX(0)} 50%{transform:translateX(16px)} 100%{transform:translateX(0)}}
+
+.slide-left{animation:slide-left 0.4s linear both}@keyframes slide-left{0%{transform:translateX(0)}50%{transform:translateX(-16px)}100%{transform:translateX(0)}}
+
 @media (max-width:800px) {
   .stats-block{
     max-width: 700px;
   }
 }
+
+
 @media (max-width:500px) {
   .stats-block{
     max-width: 498px;

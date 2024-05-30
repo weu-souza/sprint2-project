@@ -53,8 +53,6 @@ footer {
 
 .contatos-footer-container {
   grid-template-rows: 1fr 1fr 1fr auto;
-  /* align-items: center; */
-  /* width: 276px; */
 }
 .contatos-footer-container p {
   display: flex;

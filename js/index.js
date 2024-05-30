@@ -1,6 +1,10 @@
-import { load,resize } from "./main-screen/main-screen.js";
+import { load, resize, prevButton,nextButton} from "./main-screen/main-screen.js";
 
-load
-resize
+load;
+resize;
+prevButton
+nextButton
+
+
 
 
