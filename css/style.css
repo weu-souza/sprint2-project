@@ -35,11 +35,38 @@ img {
 
 /* hide mobile components */
 
-.hide{
+.hide {
   display: none;
 }
 
 /* replace background color of some one components */
 .separator {
   background: #000;
+}
+
+/* animation open dialog */
+.dialog-open {
+  animation: dialog-open 0.4s linear both;
+}
+@keyframes dialog-open {
+  0% {
+    transform: translateX(0);
+   
+  }
+  100% {
+    
+    transform: translateX(-150%);
+  }
+}
+/* animation close dialog */
+.dialog-closed {
+  animation: dialog-closed 0.4s linear both;
+}
+@keyframes dialog-closed {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
