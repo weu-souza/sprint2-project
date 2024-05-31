@@ -7,6 +7,7 @@
 @import url(main/adopt-block.css);
 @import url(main/subscription\ block.css);
 @import url(footer/footer.css);
+@import url(modal/modal.css);
 
 /* reset css */
 * {
