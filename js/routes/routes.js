@@ -16,7 +16,7 @@ const handleLocation = async () => {
   const html = await fetch(route).then((data) => data.text());
   document.getElementById("content").innerHTML = html;
 };
-window.onpopstate = handleLocation;
+window.addEventListener('popstate',handleLocation) 
 window.route = route;
 
 handleLocation();

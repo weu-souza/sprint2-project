@@ -1,330 +1,344 @@
-<!-- main screen component -->
-<script src="/js/main-screen/carousel.js"></script>
-<article class="main-screen">
-  <section class="info-block">
-    <!-- here is main title -->
-    <h1>Forever Homes Shelter</h1>
-    <!-- here is the text -->
-    <p>
-      Our mission is to rescue and provide rehabilitation to dogs and cats that
-      are critically injured or neglected. We have already saved the lives of
-      10,000 animals. We are not just a rescue, we are a refuge.
-    </p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- main screen component -->
+    <script src="/js/main-screen/carousel.js"></script>
+    <article class="main-screen">
+      <section class="info-block">
+        <!-- here is main title -->
+        <h1>Forever Homes Shelter</h1>
+        <!-- here is the text -->
+        <p>
+          Our mission is to rescue and provide rehabilitation to dogs and cats
+          that are critically injured or neglected. We have already saved the
+          lives of 10,000 animals. We are not just a rescue, we are a refuge.
+        </p>
 
-    <div class="img-container img-dog-mobile">
-      <!-- src="img/Dog_Img.png" -->
-      <img
-        id="dog-image"
-        src="img/Dog_Img.png"
-        alt="imagem de um pug com fundo azul"
-      />
-    </div>
-
-    <div class="cat-block">
-      <!-- second title is here -->
-      <h2>Your Gift Helps Save Lives</h2>
-      <!-- here is 2  buttons -->
-      <div class="main-screen-buttons-container">
-        <!-- donate button start -->
-        <button class="btn-donate">
+        <div class="img-container img-dog-mobile">
+          <!-- src="img/Dog_Img.png" -->
           <img
-            src="img/heart-svg.svg"
-            alt="icone de um coração"
-            width="25px"
-            height="25px"
+            id="dog-image"
+            src="img/Dog_Img.png"
+            alt="imagem de um pug com fundo azul"
           />
-          <span>Donate</span>
-        </button>
-        <!-- donate button end -->
+        </div>
 
-        <!-- adopt button start -->
-        <button class="adopt-button adopt-click">
-          <img
-            src="img/dog-icon.svg"
-            alt="icone de cachorro para o botão"
-            width="32px"
-            height="32px"
-          />
-          <span>Apply to Adopt</span>
-        </button>
-        <!-- adopt button end -->
-      </div>
-      <!-- end buttons -->
-    </div>
-  </section>
-  <!-- cat and dog image is here -->
-  <div class="img-container cat-image-desktop">
-    <!-- src="img/cat-dog.png" -->
-    <img
-      id="cat-image"
-      src="img/cat-dog.png"
-      alt="imagem de um gato amarelo rajado e um cachorro pug e o gato está pensando em sua casa"
-    />
-  </div>
-</article>
+        <div class="cat-block">
+          <!-- second title is here -->
+          <h2>Your Gift Helps Save Lives</h2>
+          <!-- here is 2  buttons -->
+          <div class="main-screen-buttons-container">
+            <!-- donate button start -->
+            <button class="btn-donate">
+              <img
+                src="img/heart-svg.svg"
+                alt="icone de um coração"
+                width="25px"
+                height="25px"
+              />
+              <span>Donate</span>
+            </button>
+            <!-- donate button end -->
 
-<!-- end main screen component -->
-<!-- start stats block component -->
-
-<div class="separator">
-  <article class="stats-block">
-    <h2>With your help, we accomplished these goals</h2>
-
-    <section class="stats">
-      <!-- text 1 -->
-      <div>
-        <h3>1400</h3>
-        <p>Animals Rescued</p>
-      </div>
-      <!-- text 2 -->
-      <div>
-        <h3>$1.4 Million</h3>
-        <p>Raised</p>
-      </div>
-      <!-- text 3 -->
-      <div>
-        <h3>940</h3>
-        <p>Tails Found a Home</p>
-      </div>
-    </section>
-
-    <section class="carousel">
-      <!-- button carrousel -->
-      <button id="button-left-carousel">
-        <img src="img/left-carousel-button.svg" alt="" />
-      </button>
-      <!-- carousel-imgs -->
-      <div id="imgs-carousel">
+            <!-- adopt button start -->
+            <button class="adopt-button adopt-click">
+              <img
+                src="img/dog-icon.svg"
+                alt="icone de cachorro para o botão"
+                width="32px"
+                height="32px"
+              />
+              <span>Apply to Adopt</span>
+            </button>
+            <!-- adopt button end -->
+          </div>
+          <!-- end buttons -->
+        </div>
+      </section>
+      <!-- cat and dog image is here -->
+      <div class="img-container cat-image-desktop">
+        <!-- src="img/cat-dog.png" -->
         <img
-          src="img/carousel-imgs/5.png"
-          alt=""
-          width="200px"
-          height="200px"
-        />
-        <img
-          src="img/carousel-imgs/2.png"
-          alt=""
-          width="200px"
-          height="200px"
-        />
-        <img
-          src="img/carousel-imgs/3.png"
-          alt=""
-          width="200px"
-          height="200px"
-        />
-        <img
-          src="img/carousel-imgs/4.png"
-          alt=""
-          width="200px"
-          height="200px"
+          id="cat-image"
+          src="img/cat-dog.png"
+          alt="imagem de um gato amarelo rajado e um cachorro pug e o gato está pensando em sua casa"
         />
       </div>
-      <!-- button carousel -->
-      <button id="button-right-carousel">
-        <img src="img/right-carousel-button.svg" alt="" />
-      </button>
-    </section>
-    <!-- dots -->
-    <section class="dots-container">
-      <div id="dots" class="dots-active"></div>
-      <div id="dots"></div>
-      <div id="dots"></div>
-      <div id="dots"></div>
-      <div id="dots"></div>
-    </section>
-  </article>
-  <!-- end stats block component -->
-  <!-- start donation block component -->
+    </article>
 
-  <article class="donation-block">
-    <h2>With your donations we provide</h2>
-    <section class="card-container">
-      <!-- card 1 -->
-      <div class="card">
-        <div class="card-title">
-          <h3>Shelter</h3>
-          <img src="img/icons/shelter-icon.svg" alt="" />
-        </div>
-        <p>
-          We provide shelter for many of our cats and dogs. In addition to a
-          roof over their heads, we pay for heat, food, water, and electricity,
-          and general maintenance.
-        </p>
-      </div>
-      <!-- card 2 -->
-      <div class="card">
-        <div class="card-title">
-          <h3>Vetting</h3>
-          <img src="img/icons/Vetting-icon.svg" alt="" />
-        </div>
-        <p>
-          We provide vet care to our cats and dogs. We take care of general
-          health assessments medications, vaccinations, spay/neuter procedures,
-          and other surgeries.
-        </p>
-      </div>
-      <!-- card 3 -->
-      <div class="card">
-        <div class="card-title">
-          <h3>Facilities</h3>
-          <img src="img/icons/Facilities-icon.svg" alt="" />
-        </div>
-        <p>
-          We currently utilize a facility in a dilapidated state, which has
-          necessitated significant investments to make it usable again. We are
-          still restoring the building to its full potential.
-        </p>
-      </div>
-      <!-- card 4 -->
-      <div class="card">
-        <div class="card-title">
-          <h3>Transport</h3>
-          <img src="img/icons/Transport-icon.svg" alt="" />
-        </div>
-        <p>
-          Each year, we transport over 600 dogs and 350 cats from kill shelters
-          and emergency distressing situations to hospitals or our shelter,
-          providing them with a second chance at life.
-        </p>
-      </div>
-      <!-- card 5 -->
-      <div class="card">
-        <div class="card-title">
-          <h3>Fosters</h3>
-          <img src="img/icons/Foster-icon.svg" alt="" />
-        </div>
-        <p>
-          We're lucky to have a group of individuals who generously foster our
-          cats and dogs in their homes. We cover all their veterinary needs and
-          provide necessary food supplies.
-        </p>
-      </div>
-      <!-- card 6-->
-      <div class="card">
-        <div class="card-title">
-          <h3>Food</h3>
-          <img src="img/icons/Food-icon.svg" alt="" />
-        </div>
-        <p>
-          Each year, we nourish our cats and dogs with over 2,200 cans of wet
-          food and 1,600 pounds of dry food to ensure their well-being and keep
-          them content and thriving.
-        </p>
-      </div>
-      <!-- end card  -->
-    </section>
-  </article>
-</div>
+    <!-- end main screen component -->
+    <!-- start stats block component -->
 
-<!-- end donation block component -->
-<!-- start adopt info block -->
-<article class="adopt-info-block">
-  <h2>Adoption information</h2>
-  <section class="content-block">
-    <img
-      src="img/adopt-info-img.png"
-      alt="cachorro com fundo azul mais um gato com fundo amarelo"
-    />
+    <div class="separator">
+      <article class="stats-block">
+        <h2>With your help, we accomplished these goals</h2>
 
-    <div class="text-block">
-      <h3>Applicants must:</h3>
-      <ul>
-        <li>Live within a 90 mile radius of our shelter</li>
-        <li>Accept the financial responsibility of vet care and pet care</li>
-        <li>
-          Donate $400 to adopt their dog/puppy; $125 for a cat; $150 for a
-          kitten
-        </li>
-        <li>
-          Be over 23 years of age to adopt a dog and 21 years of age to adopt a
-          cat
-        </li>
-        <li>Be ready to adopt within 7-10 days</li>
-      </ul>
-      <div class="btn-container adopt-click">
-        <button>Apply to Adopt</button>
-      </div>
+        <section class="stats">
+          <!-- text 1 -->
+          <div>
+            <h3>1400</h3>
+            <p>Animals Rescued</p>
+          </div>
+          <!-- text 2 -->
+          <div>
+            <h3>$1.4 Million</h3>
+            <p>Raised</p>
+          </div>
+          <!-- text 3 -->
+          <div>
+            <h3>940</h3>
+            <p>Tails Found a Home</p>
+          </div>
+        </section>
+
+        <section class="carousel">
+          <!-- button carrousel -->
+          <button id="button-left-carousel">
+            <img src="img/left-carousel-button.svg" alt="" />
+          </button>
+          <!-- carousel-imgs -->
+          <div id="imgs-carousel">
+            <img
+              src="img/carousel-imgs/5.png"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+            <img
+              src="img/carousel-imgs/2.png"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+            <img
+              src="img/carousel-imgs/3.png"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+            <img
+              src="img/carousel-imgs/4.png"
+              alt=""
+              width="200px"
+              height="200px"
+            />
+          </div>
+          <!-- button carousel -->
+          <button id="button-right-carousel">
+            <img src="img/right-carousel-button.svg" alt="" />
+          </button>
+        </section>
+        <!-- dots -->
+        <section class="dots-container">
+          <div id="dots" class="dots-active"></div>
+          <div id="dots"></div>
+          <div id="dots"></div>
+          <div id="dots"></div>
+          <div id="dots"></div>
+        </section>
+      </article>
+      <!-- end stats block component -->
+      <!-- start donation block component -->
+
+      <article class="donation-block">
+        <h2>With your donations we provide</h2>
+        <section class="card-container">
+          <!-- card 1 -->
+          <div class="card">
+            <div class="card-title">
+              <h3>Shelter</h3>
+              <img src="img/icons/shelter-icon.svg" alt="" />
+            </div>
+            <p>
+              We provide shelter for many of our cats and dogs. In addition to a
+              roof over their heads, we pay for heat, food, water, and
+              electricity, and general maintenance.
+            </p>
+          </div>
+          <!-- card 2 -->
+          <div class="card">
+            <div class="card-title">
+              <h3>Vetting</h3>
+              <img src="img/icons/Vetting-icon.svg" alt="" />
+            </div>
+            <p>
+              We provide vet care to our cats and dogs. We take care of general
+              health assessments medications, vaccinations, spay/neuter
+              procedures, and other surgeries.
+            </p>
+          </div>
+          <!-- card 3 -->
+          <div class="card">
+            <div class="card-title">
+              <h3>Facilities</h3>
+              <img src="img/icons/Facilities-icon.svg" alt="" />
+            </div>
+            <p>
+              We currently utilize a facility in a dilapidated state, which has
+              necessitated significant investments to make it usable again. We
+              are still restoring the building to its full potential.
+            </p>
+          </div>
+          <!-- card 4 -->
+          <div class="card">
+            <div class="card-title">
+              <h3>Transport</h3>
+              <img src="img/icons/Transport-icon.svg" alt="" />
+            </div>
+            <p>
+              Each year, we transport over 600 dogs and 350 cats from kill
+              shelters and emergency distressing situations to hospitals or our
+              shelter, providing them with a second chance at life.
+            </p>
+          </div>
+          <!-- card 5 -->
+          <div class="card">
+            <div class="card-title">
+              <h3>Fosters</h3>
+              <img src="img/icons/Foster-icon.svg" alt="" />
+            </div>
+            <p>
+              We're lucky to have a group of individuals who generously foster
+              our cats and dogs in their homes. We cover all their veterinary
+              needs and provide necessary food supplies.
+            </p>
+          </div>
+          <!-- card 6-->
+          <div class="card">
+            <div class="card-title">
+              <h3>Food</h3>
+              <img src="img/icons/Food-icon.svg" alt="" />
+            </div>
+            <p>
+              Each year, we nourish our cats and dogs with over 2,200 cans of
+              wet food and 1,600 pounds of dry food to ensure their well-being
+              and keep them content and thriving.
+            </p>
+          </div>
+          <!-- end card  -->
+        </section>
+      </article>
     </div>
-  </section>
-</article>
-<!-- end adopt info block -->
-<!-- start diference block -->
-<div class="separator">
-  <article class="diference-block">
-    <section class="diference-title-container">
-      <img src="img/diference-blocks/Heart_Drawing_Left.png" alt="" />
-      <h2>How you can make a difference</h2>
-      <img src="img/diference-blocks/Heart_Drawing_Right (1).png" alt="" />
-    </section>
-    <section class="diference-card-container">
-      <!-- card 1 -->
-      <div class="diference-card">
-        <h3>Adopt or Foster</h3>
-        <p>Provide a forever or temporary home to a homeless animal.</p>
-        <button class="bg-green">View Adoptables</button>
-      </div>
-      <!-- card 2 -->
-      <div class="diference-card">
-        <h3>Volunteer</h3>
-        <p>We are always in need of passionate and friendly volunteers.</p>
-        <button class="bg-yellow">Get Involved</button>
-      </div>
-      <!-- card 3 -->
-      <div class="diference-card">
-        <h3>Donate Monthly</h3>
-        <p>Regular donations is a reliable stream of funds to help sustain.</p>
-        <button class="bg-pink">Give Monthly</button>
-      </div>
-      <!-- card 4 -->
-      <div class="diference-card">
-        <h3>Start a Fundraiser</h3>
-        <p>
-          Start a fundraiser to raise funds and help us continue our mission.
-        </p>
-        <button class="bg-purple">Learn More</button>
-      </div>
-    </section>
-  </article>
-  <!-- end diference block -->
 
-  <!-- start adopt block -->
-  <article class="adopt-block">
-    <!-- header adopt block -->
-    <div class="adopt-block-img">
-      <img src="img/adopt-block/cat-img.png" alt="" />
-    </div>
-    <!-- boddy adopt block -->
-    <section class="adopt-body-container">
-      <h2>Find your <span>best friend</span> today!</h2>
-      <div class="adopt-text-btn">
-        <h3>Browse our adorable adoptables</h3>
-        <div class="adopt-button-container">
-          <button class="btn-view-adpt">View Adoptables</button>
-          <button class="btn-apply-adpt adopt-click">Apply to Adopt</button>
+    <!-- end donation block component -->
+    <!-- start adopt info block -->
+    <article class="adopt-info-block">
+      <h2>Adoption information</h2>
+      <section class="content-block">
+        <img
+          src="img/adopt-info-img.png"
+          alt="cachorro com fundo azul mais um gato com fundo amarelo"
+        />
+
+        <div class="text-block">
+          <h3>Applicants must:</h3>
+          <ul>
+            <li>Live within a 90 mile radius of our shelter</li>
+            <li>
+              Accept the financial responsibility of vet care and pet care
+            </li>
+            <li>
+              Donate $400 to adopt their dog/puppy; $125 for a cat; $150 for a
+              kitten
+            </li>
+            <li>
+              Be over 23 years of age to adopt a dog and 21 years of age to
+              adopt a cat
+            </li>
+            <li>Be ready to adopt within 7-10 days</li>
+          </ul>
+          <div class="btn-container adopt-click">
+            <button>Apply to Adopt</button>
+          </div>
         </div>
-      </div>
-    </section>
-    <div class="adopt-block-img">
-      <img src="img/adopt-block/dog-img.png" alt="" />
-    </div>
-  </article>
-  <!-- end adopt block -->
-</div>
-<!-- start subscription block -->
-<div class="bg-purple">
-  <article class="subscription-block">
-    <section class="text-container">
-      <h2>Subscribe to our newsletter</h2>
-      <p>
-        for updates on shelter events, fundraising parties, and heartwarming
-        stories of animals finding their forever homes.
-      </p>
-    </section>
-    <form class="form-container-subscription">
-      <input type="email" placeholder="Enter your email" />
-      <button type="submit">Subscribe</button>
-    </form>
-  </article>
-</div>
+      </section>
+    </article>
+    <!-- end adopt info block -->
+    <!-- start diference block -->
+    <div class="separator">
+      <article class="diference-block">
+        <section class="diference-title-container">
+          <img src="img/diference-blocks/Heart_Drawing_Left.png" alt="" />
+          <h2>How you can make a difference</h2>
+          <img src="img/diference-blocks/Heart_Drawing_Right (1).png" alt="" />
+        </section>
+        <section class="diference-card-container">
+          <!-- card 1 -->
+          <div class="diference-card">
+            <h3>Adopt or Foster</h3>
+            <p>Provide a forever or temporary home to a homeless animal.</p>
+            <button class="bg-green">View Adoptables</button>
+          </div>
+          <!-- card 2 -->
+          <div class="diference-card">
+            <h3>Volunteer</h3>
+            <p>We are always in need of passionate and friendly volunteers.</p>
+            <button class="bg-yellow">Get Involved</button>
+          </div>
+          <!-- card 3 -->
+          <div class="diference-card">
+            <h3>Donate Monthly</h3>
+            <p>
+              Regular donations is a reliable stream of funds to help sustain.
+            </p>
+            <button class="bg-pink">Give Monthly</button>
+          </div>
+          <!-- card 4 -->
+          <div class="diference-card">
+            <h3>Start a Fundraiser</h3>
+            <p>
+              Start a fundraiser to raise funds and help us continue our
+              mission.
+            </p>
+            <button class="bg-purple">Learn More</button>
+          </div>
+        </section>
+      </article>
+      <!-- end diference block -->
 
+      <!-- start adopt block -->
+      <article class="adopt-block">
+        <!-- header adopt block -->
+        <div class="adopt-block-img">
+          <img src="img/adopt-block/cat-img.png" alt="" />
+        </div>
+        <!-- boddy adopt block -->
+        <section class="adopt-body-container">
+          <h2>Find your <span>best friend</span> today!</h2>
+          <div class="adopt-text-btn">
+            <h3>Browse our adorable adoptables</h3>
+            <div class="adopt-button-container">
+              <button class="btn-view-adpt">View Adoptables</button>
+              <button class="btn-apply-adpt adopt-click">Apply to Adopt</button>
+            </div>
+          </div>
+        </section>
+        <div class="adopt-block-img">
+          <img src="img/adopt-block/dog-img.png" alt="" />
+        </div>
+      </article>
+      <!-- end adopt block -->
+    </div>
+    <!-- start subscription block -->
+    <div class="bg-purple">
+      <article class="subscription-block">
+        <section class="text-container">
+          <h2>Subscribe to our newsletter</h2>
+          <p>
+            for updates on shelter events, fundraising parties, and heartwarming
+            stories of animals finding their forever homes.
+          </p>
+        </section>
+        <form class="form-container-subscription">
+          <input type="email" placeholder="Enter your email" />
+          <button type="submit">Subscribe</button>
+        </form>
+      </article>
+    </div>
+  </body>
+</html>
