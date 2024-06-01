@@ -78,7 +78,21 @@
   text-align: left;
 }
 
+.img-dog-mobile{
+  display: none;
+}
+
+.cat-image-desktop{
+  display: block;
+}
+
 @media (max-width: 800px) {
+  .img-dog-mobile{
+    display: block;
+  }
+  .cat-image-desktop{
+    display: none;
+  }
   .main-screen {
     display: flex;
     flex-direction: column;

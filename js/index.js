@@ -1,29 +1,7 @@
-import { load, resize } from "./main-screen/Photo.js";
-import { nextButton, prevButton } from "./main-screen/carousel.js";
 import { diag } from "./dialog/dialog.js";
-
+import { carrosel } from "./main-screen/carousel.js";
 diag();
-load;
-resize;
-prevButton;
-nextButton;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+carrosel();
 
 // prevent forms updating page
 let form = document.querySelectorAll("form");
