@@ -9,6 +9,8 @@
 @import url(footer/footer.css);
 @import url(modal/modal.css);
 @import url(modal/modal-donate.css);
+@import url(other/success.css);
+@import url(other/adopt.css);
 
 /* reset css */
 * {

@@ -22,13 +22,11 @@
 .adopt-body-container {
   display: flex;
   flex-flow: column nowrap;
-  
 }
 
 .adopt-text-btn {
   display: flex;
   flex-flow: column nowrap;
-
 }
 .adopt-text-btn h3 {
   font-family: Poppins;
@@ -41,12 +39,13 @@
 }
 
 .adopt-button-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
 }
 
-.adopt-button-container button {
+.adopt-button-container button,
+.adopt-button-container a {
   font-family: Poppins;
   font-size: 16px;
   font-weight: 700;
@@ -57,17 +56,18 @@
   cursor: pointer;
   margin-bottom: 20px;
 }
-.btn-view-adpt{
- background: #F8DB46;
+.btn-view-adpt {
+  background: #f8db46;
+  color: #1e1f27;
 }
 
-.btn-apply-adpt{
-    background: none;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
+.btn-apply-adpt {
+  background: none;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
-.adopt-block-img{
+.adopt-block-img {
   align-content: flex-end;
 }
 

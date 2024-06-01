@@ -41,8 +41,8 @@
         <img src="img/Logotype.png" alt="logo do site, um cachorro e um gato" />
         <!-- navigation is here -->
         <ul class="navigation">
-          <li><a href="#">Rescue center</a></li>
-          <li><a href="#">Apply to adopt</a></li>
+          <li><a href="pages/success.html">Rescue center</a></li>
+          <li><a href="pages/adoptable.html">Apply to adopt</a></li>
           <li><a href="#">Volunteer</a></li>
           <li><a href="#">Ways to give</a></li>
           <li><a href="#">Events</a></li>
@@ -379,7 +379,7 @@
             <div class="adopt-text-btn">
               <h3>Browse our adorable adoptables</h3>
               <div class="adopt-button-container">
-                <button class="btn-view-adpt">View Adoptables</button>
+                <a href="pages/adoptable.html" class="btn-view-adpt">View Adoptables</a>
                 <button class="btn-apply-adpt adopt-click">
                   Apply to Adopt
                 </button>
@@ -570,7 +570,7 @@
           </p>
         </div>
 
-        <button class="modal-adopt success-page-navig">
+        <a class="modal-adopt success-page-navig" href="pages/success.html">
           <span class="dog-modal">
             <svg
               width="32"
@@ -607,7 +607,7 @@
               /></svg
           ></span>
           <span>I wanna Adopt!</span>
-        </button>
+          </a>
         <button class="modal-cancel">
           <span
             ><svg
@@ -686,10 +686,10 @@
 
           <div class="buttons-donate-container">
             <!-- button help -->
-            <button class="dialog-donate" type="submit">
+            <a class="dialog-donate" id="navigate-help" href="pages/success.html" type="submit">
               <img src="img/heart-svg.svg" alt="" />
               <span>I wanna Help!</span>
-            </button>
+            </a>
             <!-- button cancel -->
             <button class="dialog-cancel">
               <img src="img/backIcon.svg" alt="" />

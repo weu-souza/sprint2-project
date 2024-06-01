@@ -65,3 +65,4 @@ function closedDialogDonate() {
   dialogDonate.classList.remove("dialog-open-donate");
   dialogDonate.classList.add("dialog-closed-donate");
 }
+diag()
