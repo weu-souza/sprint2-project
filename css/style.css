@@ -8,6 +8,7 @@
 @import url(main/subscription\ block.css);
 @import url(footer/footer.css);
 @import url(modal/modal.css);
+@import url(modal/modal-donate.css);
 
 /* reset css */
 * {
@@ -44,29 +45,4 @@ img {
   background: #000;
 }
 
-/* animation open dialog */
-.dialog-open {
-  animation: dialog-open 0.4s linear both;
-}
-@keyframes dialog-open {
-  0% {
-    transform: translateX(0);
-   
-  }
-  100% {
-    
-    transform: translateX(-150%);
-  }
-}
-/* animation close dialog */
-.dialog-closed {
-  animation: dialog-closed 0.4s linear both;
-}
-@keyframes dialog-closed {
-  0% {
-    transform: translateX(-150%);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
+

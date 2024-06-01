@@ -1,4 +1,5 @@
 .dialog-adapt-container {
+  max-width: 480px;
   position: fixed;
   margin: auto;
   top: 5%;
@@ -29,6 +30,7 @@
   letter-spacing: -0.02em;
   text-align: center;
 }
+
 .form-adopt-container div {
   display: grid;
 }
@@ -67,7 +69,7 @@
   margin-bottom: 30px;
 }
 
-input[type="checkbox"] {
+.dialog-adapt-container input[type="checkbox"] {
   display: none;
 }
 
@@ -89,9 +91,10 @@ input[type="checkbox"] {
   text-align: left;
 }
 
-.form-adopt-container input[type="text"],
-.form-adopt-container input[type="email"] {
-  outline: #937aff;
+.form-adopt-container input[type="text"]:focus ,
+.form-adopt-container input[type="email"]:focus,  
+.form-adopt-container input[type="date"]:focus  {
+  outline: #937aff 1px solid;
 }
 .modal-button-container {
   display: grid;
@@ -141,4 +144,60 @@ input[type="checkbox"] {
   line-height: 24px;
   letter-spacing: -0.02em;
   align-self: center;
+}
+
+/* animation open dialog */
+.dialog-open {
+  animation: dialog-open 0.4s linear both;
+}
+@keyframes dialog-open {
+  0% {
+    transform: translateX(0);
+   
+  }
+  100% {
+    
+    transform: translateX(-150%);
+  }
+}
+/* animation close dialog */
+.dialog-closed {
+  animation: dialog-closed 0.4s linear both;
+}
+@keyframes dialog-closed {
+  0% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width:800px) {
+  /* animation open dialog */
+.dialog-open {
+  animation: dialog-open 0.4s linear both;
+}
+@keyframes dialog-open {
+  0% {
+    transform: translateX(0);
+   
+  }
+  100% {
+    
+    transform: translateX(-30%);
+  }
+}
+/* animation close dialog */
+.dialog-closed {
+  animation: dialog-closed 0.4s linear both;
+}
+@keyframes dialog-closed {
+  0% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 }

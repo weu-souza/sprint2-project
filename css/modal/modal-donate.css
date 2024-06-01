@@ -1,0 +1,238 @@
+.dialog-donate-container {
+  max-width: 480px;
+  position: fixed;
+  margin: auto;
+  top: 5%;
+  right: 0;
+  padding: 32px;
+  gap: 48px;
+  border-radius: 32px;
+  background-color: #fff;
+  box-shadow: 1px 2px 5px rgba(30, 31, 39, 0.25);
+  display: grid;
+}
+.dialog-donate-container h2 {
+  font-family: Poppins;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.form-donate-dialog {
+}
+
+.form-donate-dialog div {
+  display: grid;
+}
+
+.form-donate-dialog .donate-label {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #ff3d9a;
+  margin-bottom: 10px;
+}
+.form-donate-dialog .donate-label span {
+  color: #3f96fc;
+}
+
+.form-donate-dialog input[type="text"],
+.form-donate-dialog input[type="email"] {
+  padding: 16px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #3f96fc;
+  color: #1e1f27;
+  margin-bottom: 24px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+
+.form-donate-dialog input[type="text"]:focus,
+.form-donate-dialog input[type="email"]:focus {
+  outline: #937aff solid 1px;
+}
+
+.form-donate-dialog input[type="radio"] {
+  display: none;
+}
+
+.donate-btns-container label {
+  margin-right: 8px;
+}
+
+.payment-container-donate {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.payment-checked {
+  display: flex;
+  justify-content: space-between;
+  background: #3f96fc;
+  border-radius: 8px;
+  padding: 16px;
+
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  align-items: center;
+}
+
+.payment-uncheck {
+  display: flex;
+  justify-content: space-between;
+  background: none;
+  border: 1px solid #3f96fc;
+  border-radius: 8px;
+  padding: 16px;
+
+  align-items: center;
+
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  color: #37383f ;
+}
+.payment-checked #check {
+  background: #ff3d9a;
+  padding: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+}
+.payment-uncheck #check {
+  padding: 4px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #37383f;
+}
+.donate-btns-container h3 {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #ff3d9a;
+}
+.donate-btns-container h3 span {
+  color: #3f96fc;
+}
+
+.buttons-donate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dialog-donate {
+ cursor: pointer;
+  border-radius: 32px;
+  padding: 16px 32px;
+  gap: 8px;
+  background: #ff3d9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #ffffff;
+
+  margin: 20px auto;
+}
+
+.dialog-cancel {
+  cursor: pointer;
+  margin: 0 auto;
+  border-radius: 32px;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  background: #37383F;
+
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #fff;
+}
+
+
+/* animation open dialog */
+.dialog-open-donate {
+  animation: dialog-open-donate 0.4s linear both;
+}
+@keyframes dialog-open-donate {
+  0% {
+    transform: translateX(0);
+   
+  }
+  100% {
+    
+    transform: translateX(-120%);
+  }
+}
+/* animation close dialog */
+.dialog-closed-donate {
+  animation: dialog-closed-donate 0.4s linear both;
+}
+@keyframes dialog-closed-donate {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width:800px) {
+  .dialog-open-donate {
+    animation: dialog-open-donate 0.4s linear both;
+  }
+  @keyframes dialog-open-donate {
+    0% {
+      transform: translateX(0);
+     
+    }
+    100% {
+      
+      transform: translateX(-20%);
+    }
+  }
+  /* animation close dialog */
+  .dialog-closed-donate {
+    animation: dialog-closed-donate 0.4s linear both;
+  }
+  @keyframes dialog-closed-donate {
+    0% {
+      transform: translateX(-20%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+}

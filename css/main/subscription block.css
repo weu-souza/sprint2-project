@@ -30,7 +30,7 @@
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
 }
-.form-container {
+.form-container-subscription {
   margin: 0 auto;
   max-width: 600px;
   width: 100%;
@@ -39,7 +39,7 @@
   justify-content: space-between;
   padding-bottom: 80px;
 }
-.form-container input {
+.form-container-subscription input {
   padding: 16px 136px 16px 24px;
   border-radius: 32px;
   border: 2px solid #fff;
@@ -54,11 +54,11 @@
   text-align: left;
 }
 
-.form-container input::placeholder {
+.form-container-subscription input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.form-container button {
+.form-container-subscription button {
   padding: 16px 32px;
   border-radius: 32px;
   cursor: pointer;
