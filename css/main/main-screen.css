@@ -77,8 +77,20 @@
   font-weight: 700;
   text-align: left;
 }
+#dog-image{
+display: none;
+}
+#cat-image{
+  display: block;
+}
 
 @media (max-width: 800px) {
+  #dog-image{
+    display: block;
+    }
+    #cat-image{
+      display: none;
+    }
   .main-screen {
     display: flex;
     flex-direction: column;
@@ -132,6 +144,13 @@
   .cat-block {
     max-width: 398px;
   } 
+
+  #dog-image{
+    display: block;
+    }
+    #cat-image{
+      display: none;
+    }
 
 
 }

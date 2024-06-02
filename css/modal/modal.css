@@ -12,8 +12,6 @@
   display: grid;
 }
 
-
-
 .dialog-adapt-title h2 {
   font-family: "Poppins";
   font-size: 48px;
@@ -56,21 +54,31 @@
   text-align: left;
   color: #37383f !important;
 }
+.agre-container label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
 .agre-container {
   display: flex;
+  flex-direction: row;
 }
-.agre-container label {
-  width: 10px;
-  height: 10px;
+.check-agree {
   border-radius: 50%;
   background-color: #37383f;
-  padding: 4px;
-  margin-right: 10px;
-  margin-bottom: 30px;
+  padding: 9px;
+  transition: 0.2s;
 }
 
 .dialog-adapt-container input[type="checkbox"] {
   display: none;
+}
+
+.agre-container input[type="checkbox"]:checked + .check-agree {
+  background-color: #04C27F;
+  background-image: url(../../img/payment-checked-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .form-adopt-container input[type="text"],
@@ -91,9 +99,9 @@
   text-align: left;
 }
 
-.form-adopt-container input[type="text"]:focus ,
-.form-adopt-container input[type="email"]:focus,  
-.form-adopt-container input[type="date"]:focus  {
+.form-adopt-container input[type="text"]:focus,
+.form-adopt-container input[type="email"]:focus,
+.form-adopt-container input[type="date"]:focus {
   outline: #937aff 1px solid;
 }
 .modal-button-container {
@@ -148,21 +156,19 @@
 
 /* animation open dialog */
 .dialog-open {
-  animation: dialog-open 0.4s linear both;
+  animation: dialog-open 0.2s linear both;
 }
 @keyframes dialog-open {
   0% {
     transform: translateX(0);
-   
   }
   100% {
-    
     transform: translateX(-150%);
   }
 }
 /* animation close dialog */
 .dialog-closed {
-  animation: dialog-closed 0.4s linear both;
+  animation: dialog-closed 0.2s linear both;
 }
 @keyframes dialog-closed {
   0% {
@@ -173,31 +179,58 @@
   }
 }
 
-@media (max-width:800px) {
+@media (max-width: 800px) {
+  .dialog-adapt-container {
+    top: 1%;
+  }
   /* animation open dialog */
-.dialog-open {
-  animation: dialog-open 0.4s linear both;
-}
-@keyframes dialog-open {
-  0% {
-    transform: translateX(0);
-   
+  .dialog-open {
+    animation: dialog-open 0.2s linear both;
   }
-  100% {
-    
-    transform: translateX(-30%);
+  @keyframes dialog-open {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-30%);
+    }
+  }
+  /* animation close dialog */
+  .dialog-closed {
+    animation: dialog-closed 0.2s linear both;
+  }
+  @keyframes dialog-closed {
+    0% {
+      transform: translateX(-30%);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
 }
-/* animation close dialog */
-.dialog-closed {
-  animation: dialog-closed 0.4s linear both;
-}
-@keyframes dialog-closed {
-  0% {
-    transform: translateX(-30%);
+@media (max-width: 500px) {
+  /* animation open dialog */
+  .dialog-open {
+    animation: dialog-open 0.2s linear both;
   }
-  100% {
-    transform: translateX(0);
+  @keyframes dialog-open {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-0%);
+    }
   }
-}
+  /* animation close dialog */
+  .dialog-closed {
+    animation: dialog-closed 0.2s linear both;
+  }
+  @keyframes dialog-closed {
+    0% {
+      transform: translateX(-0%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 }

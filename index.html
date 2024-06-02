@@ -41,8 +41,8 @@
         <img src="img/Logotype.png" alt="logo do site, um cachorro e um gato" />
         <!-- navigation is here -->
         <ul class="navigation">
-          <li><a href="pages/success.html">Rescue center</a></li>
-          <li><a href="pages/adoptable.html">Apply to adopt</a></li>
+          <li><a href="#">Rescue center</a></li>
+          <li><a href="#">Apply to adopt</a></li>
           <li><a href="#">Volunteer</a></li>
           <li><a href="#">Ways to give</a></li>
           <li><a href="#">Events</a></li>
@@ -84,9 +84,9 @@
             lives of 10,000 animals. We are not just a rescue, we are a refuge.
           </p>
 
-          <div class="img-container hide">
+          <div class="img-container" id="dog-image">
             <!-- src="img/Dog_Img.png" -->
-            <img id="dog-image" alt="imagem de um pug com fundo azul" />
+            <img src="img/Dog_Img.png" alt="imagem de um pug com fundo azul" />
           </div>
 
           <div class="cat-block">
@@ -118,14 +118,15 @@
               </button>
               <!-- adopt button end -->
             </div>
+            +
             <!-- end buttons -->
           </div>
         </section>
         <!-- cat and dog image is here -->
-        <div class="img-container">
+        <div class="img-container" id="cat-image">
           <!-- src="img/cat-dog.png" -->
           <img
-            id="cat-image"
+            src="img/cat-dog.png"
             alt="imagem de um gato amarelo rajado e um cachorro pug e o gato está pensando em sua casa"
           />
         </div>
@@ -169,19 +170,19 @@
                 width="200px"
                 height="200px"
               />
-              <img
+              <img class="carousel-mobile"
                 src="img/carousel-imgs/2.png"
                 alt=""
                 width="200px"
                 height="200px"
               />
-              <img
+              <img class="carousel-mobile"
                 src="img/carousel-imgs/3.png"
                 alt=""
                 width="200px"
                 height="200px"
               />
-              <img
+              <img class="carousel-mobile"
                 src="img/carousel-imgs/4.png"
                 alt=""
                 width="200px"
@@ -336,7 +337,9 @@
             <div class="diference-card">
               <h3>Adopt or Foster</h3>
               <p>Provide a forever or temporary home to a homeless animal.</p>
-              <button class="bg-green">View Adoptables</button>
+              <a href="pages/adoptable.html" class="bg-green"
+                >View Adoptables</a
+              >
             </div>
             <!-- card 2 -->
             <div class="diference-card">
@@ -370,6 +373,7 @@
         <!-- start adopt block -->
         <article class="adopt-block">
           <!-- header adopt block -->
+
           <div class="adopt-block-img">
             <img src="img/adopt-block/cat-img.png" alt="" />
           </div>
@@ -379,7 +383,9 @@
             <div class="adopt-text-btn">
               <h3>Browse our adorable adoptables</h3>
               <div class="adopt-button-container">
-                <a href="pages/adoptable.html" class="btn-view-adpt">View Adoptables</a>
+                <a href="pages/adoptable.html" class="btn-view-adpt"
+                  >View Adoptables</a
+                >
                 <button class="btn-apply-adpt adopt-click">
                   Apply to Adopt
                 </button>
@@ -403,7 +409,7 @@
             </p>
           </section>
           <form class="form-container-subscription">
-            <input type="email" placeholder="Enter your email" />
+            <input type="email" placeholder="Enter your email" required/>
             <button type="submit">Subscribe</button>
           </form>
         </article>
@@ -414,7 +420,7 @@
     <!-- start footer -->
     <div style="background-color: #f5f5f5">
       <footer>
-        <article class="footer-separator">
+        <article class="footer-links">
           <!-- footer logo container start -->
           <section class="logo-footer-container">
             <img src="img/Logotype.png" width="93px" height="93px" />
@@ -523,11 +529,12 @@
             </div>
           </section>
         </article>
-        <section class="title-footer">
-          <h3>
-            ​We are not just a rescue,
-            <span style="color: #ff3d9a">we are a refuge</span>
-          </h3>
+        <!-- end links -->
+        <div class="footer-separator"></div>
+        <h3>
+          ​We are not just a rescue,
+          <span style="color: #ff3d9a">we are a refuge</span>
+        </h3>
         </section>
       </footer>
     </div>
@@ -554,77 +561,82 @@
           <label for="date">DATE OF BIRTH <span>*</span></label>
           <input type="date" id="date" required />
         </div>
+        
+        <div class="modal-button-container">
+          <!-- terms area -->
+          <div class="agre-container">
+            <label for="agree-terms" >
+              <input type="checkbox" id="agree-terms" required/>
+
+              <span class="check-agree">
+            </span> <p class="radio-btn">
+              I agree with
+              <a href="" style="color: #ff3d9a !important">Privacy Policy</a> and
+              <a href="/" style="color: #ff3d9a !important"
+                >Terms of Conditions</a
+              >
+            </p>
+          </label>
+            
+          </div>
+  
+          <a class="modal-adopt success-page-navig" href="pages/success.html">
+            <span class="dog-modal">
+              <svg
+                width="32"
+                height="33"
+                viewBox="0 0 32 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.8489 6.53948C19.9124 6.49692 19.9777 6.45619 20.0448 6.41743C20.9012 5.92302 21.8832 5.84953 22.7917 5.97699C23.706 6.10527 24.6414 6.44825 25.5138 6.9093C27.2431 7.82321 28.934 9.31394 29.9007 10.9882C30.9105 12.7373 30.9678 14.4195 30.3123 15.8759C29.6899 17.2588 28.4971 18.2807 27.2948 18.9748C26.8913 19.2077 26.4564 19.4213 25.9996 19.5965C25.9968 18.7497 25.905 17.8689 25.7362 16.9783C25.8389 16.9254 25.9418 16.8692 26.0448 16.8097C26.9949 16.2612 27.7046 15.5784 28.0325 14.8499C28.3273 14.1949 28.3826 13.3589 27.7356 12.2382C27.0454 11.0428 25.7383 9.85556 24.3457 9.11961C23.6572 8.75572 23.0007 8.53079 22.4443 8.45274C22.1737 8.41477 21.9482 8.41401 21.7626 8.43759C21.1614 7.70922 20.5185 7.06633 19.8489 6.53948Z"
+                  fill="#fff"
+                />
+                <path
+                  d="M12.1507 6.53925C12.0873 6.49678 12.0221 6.45612 11.9551 6.41743C11.0987 5.92302 10.1167 5.84953 9.20823 5.97699C8.29386 6.10527 7.35846 6.44825 6.48608 6.9093C4.75678 7.82321 3.06591 9.31394 2.09925 10.9882C1.08942 12.7373 1.03211 14.4195 1.68763 15.8759C2.31003 17.2588 3.50285 18.2807 4.70509 18.9748C5.10839 19.2076 5.54309 19.4211 5.9997 19.5963C6.00251 18.7494 6.09433 17.8686 6.26314 16.978C6.16063 16.9252 6.05788 16.8691 5.95509 16.8097C5.00501 16.2612 4.29526 15.5784 3.96737 14.8499C3.67259 14.1949 3.61729 13.3589 4.26431 12.2382C4.95451 11.0428 6.26164 9.85556 7.6542 9.11961C8.34275 8.75572 8.99925 8.53079 9.55558 8.45274C9.82593 8.41481 10.0512 8.41401 10.2368 8.43752C10.838 7.70907 11.481 7.06613 12.1507 6.53925Z"
+                  fill="#fff"
+                />
+                <path
+                  d="M15.1996 21.9333C15.5996 22.4667 16.3996 22.4667 16.7996 21.9333L17.7996 20.6C18.2941 19.9408 17.8237 19 16.9996 19H14.9996C14.1756 19 13.7052 19.9408 14.1996 20.6L15.1996 21.9333Z"
+                  fill="#fff"
+                />
+                <path
+                  d="M14.0001 14.5C14.0001 15.3284 13.3285 16 12.5001 16C11.6717 16 11.0001 15.3284 11.0001 14.5C11.0001 13.6716 11.6717 13 12.5001 13C13.3285 13 14.0001 13.6716 14.0001 14.5Z"
+                  fill="#fff"
+                />
+                <path
+                  d="M21.0001 14.5C21.0001 15.3284 20.3285 16 19.5001 16C18.6717 16 18.0001 15.3284 18.0001 14.5C18.0001 13.6716 18.6717 13 19.5001 13C20.3285 13 21.0001 13.6716 21.0001 14.5Z"
+                  fill="#fff"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M16.0001 3.75C14.4058 3.75 12.9023 4.41221 11.5917 5.393C10.2774 6.37655 9.08867 7.72923 8.09082 9.25104C6.10609 12.278 4.75011 16.1715 4.75011 19.6364C4.75011 23.197 6.18858 25.6839 8.42598 27.2286C10.5924 28.7242 13.3779 29.25 16.0001 29.25C18.6224 29.25 21.4078 28.7242 23.5742 27.2286C25.8116 25.6839 27.2501 23.197 27.2501 19.6364C27.2501 16.1715 25.8941 12.278 23.9094 9.25104C22.9116 7.72923 21.7228 6.37655 20.4085 5.393C19.098 4.41221 17.5945 3.75 16.0001 3.75ZM7.25011 19.6364C7.25011 16.75 8.40885 13.3253 10.1815 10.6219C11.0623 9.2785 12.0629 8.16295 13.0896 7.39457C14.12 6.62343 15.1092 6.25 16.0001 6.25C16.891 6.25 17.8802 6.62343 18.9106 7.39457C19.9373 8.16295 20.9379 9.2785 21.8187 10.6219C23.5914 13.3253 24.7501 16.75 24.7501 19.6364C24.7501 22.427 23.6739 24.1219 22.1539 25.1712C20.791 26.1122 18.9704 26.5996 17.0001 26.72V23.067C17.2257 22.9368 17.4307 22.7589 17.5998 22.5334L18.5998 21.2C19.5887 19.8816 18.6479 18 16.9998 18H14.9998C13.3517 18 12.411 19.8816 13.3998 21.2L14.3998 22.5334C14.5691 22.7591 14.7743 22.9371 15.0001 23.0673V26.72C13.0298 26.5996 11.2093 26.1122 9.84632 25.1712C8.32636 24.1219 7.25011 22.427 7.25011 19.6364ZM16.9998 20L15.9998 21.3334L14.9998 20H16.9998Z"
+                  fill="#fff"
+                /></svg
+            ></span>
+            <span>I wanna Adopt!</span>
+          </a>
+          <button class="modal-cancel">
+            <span
+              ><svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.7076 25.2926C20.8005 25.3855 20.8742 25.4958 20.9244 25.6172C20.9747 25.7386 21.0006 25.8687 21.0006 26.0001C21.0006 26.1315 20.9747 26.2616 20.9244 26.383C20.8742 26.5044 20.8005 26.6147 20.7076 26.7076C20.6146 26.8005 20.5043 26.8742 20.383 26.9245C20.2616 26.9747 20.1314 27.0006 20.0001 27.0006C19.8687 27.0006 19.7386 26.9747 19.6172 26.9245C19.4958 26.8742 19.3855 26.8005 19.2926 26.7076L9.29255 16.7076C9.19958 16.6147 9.12582 16.5044 9.07549 16.383C9.02517 16.2616 8.99927 16.1315 8.99927 16.0001C8.99927 15.8687 9.02517 15.7385 9.07549 15.6171C9.12582 15.4957 9.19958 15.3854 9.29255 15.2926L19.2926 5.29257C19.4802 5.10493 19.7347 4.99951 20.0001 4.99951C20.2654 4.99951 20.5199 5.10493 20.7076 5.29257C20.8952 5.48021 21.0006 5.7347 21.0006 6.00007C21.0006 6.26543 20.8952 6.51993 20.7076 6.70757L11.4138 16.0001L20.7076 25.2926Z"
+                  fill="white"
+                /></svg
+            ></span>
+            <span>Cancel</span>
+          </button>
+        </div>
       </form>
 
-      <div class="modal-button-container">
-        <!-- terms area -->
-        <div class="agre-container">
-          <input type="checkbox" id="agree-terms" />
-          <label for="agree-terms"> </label>
-          <p class="radio-btn">
-            I agree with
-            <a href="" style="color: #ff3d9a !important">Privacy Policy</a> and
-            <a href="/" style="color: #ff3d9a !important"
-              >Terms of Conditions</a
-            >
-          </p>
-        </div>
-
-        <a class="modal-adopt success-page-navig" href="pages/success.html">
-          <span class="dog-modal">
-            <svg
-              width="32"
-              height="33"
-              viewBox="0 0 32 33"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M19.8489 6.53948C19.9124 6.49692 19.9777 6.45619 20.0448 6.41743C20.9012 5.92302 21.8832 5.84953 22.7917 5.97699C23.706 6.10527 24.6414 6.44825 25.5138 6.9093C27.2431 7.82321 28.934 9.31394 29.9007 10.9882C30.9105 12.7373 30.9678 14.4195 30.3123 15.8759C29.6899 17.2588 28.4971 18.2807 27.2948 18.9748C26.8913 19.2077 26.4564 19.4213 25.9996 19.5965C25.9968 18.7497 25.905 17.8689 25.7362 16.9783C25.8389 16.9254 25.9418 16.8692 26.0448 16.8097C26.9949 16.2612 27.7046 15.5784 28.0325 14.8499C28.3273 14.1949 28.3826 13.3589 27.7356 12.2382C27.0454 11.0428 25.7383 9.85556 24.3457 9.11961C23.6572 8.75572 23.0007 8.53079 22.4443 8.45274C22.1737 8.41477 21.9482 8.41401 21.7626 8.43759C21.1614 7.70922 20.5185 7.06633 19.8489 6.53948Z"
-                fill="#fff"
-              />
-              <path
-                d="M12.1507 6.53925C12.0873 6.49678 12.0221 6.45612 11.9551 6.41743C11.0987 5.92302 10.1167 5.84953 9.20823 5.97699C8.29386 6.10527 7.35846 6.44825 6.48608 6.9093C4.75678 7.82321 3.06591 9.31394 2.09925 10.9882C1.08942 12.7373 1.03211 14.4195 1.68763 15.8759C2.31003 17.2588 3.50285 18.2807 4.70509 18.9748C5.10839 19.2076 5.54309 19.4211 5.9997 19.5963C6.00251 18.7494 6.09433 17.8686 6.26314 16.978C6.16063 16.9252 6.05788 16.8691 5.95509 16.8097C5.00501 16.2612 4.29526 15.5784 3.96737 14.8499C3.67259 14.1949 3.61729 13.3589 4.26431 12.2382C4.95451 11.0428 6.26164 9.85556 7.6542 9.11961C8.34275 8.75572 8.99925 8.53079 9.55558 8.45274C9.82593 8.41481 10.0512 8.41401 10.2368 8.43752C10.838 7.70907 11.481 7.06613 12.1507 6.53925Z"
-                fill="#fff"
-              />
-              <path
-                d="M15.1996 21.9333C15.5996 22.4667 16.3996 22.4667 16.7996 21.9333L17.7996 20.6C18.2941 19.9408 17.8237 19 16.9996 19H14.9996C14.1756 19 13.7052 19.9408 14.1996 20.6L15.1996 21.9333Z"
-                fill="#fff"
-              />
-              <path
-                d="M14.0001 14.5C14.0001 15.3284 13.3285 16 12.5001 16C11.6717 16 11.0001 15.3284 11.0001 14.5C11.0001 13.6716 11.6717 13 12.5001 13C13.3285 13 14.0001 13.6716 14.0001 14.5Z"
-                fill="#fff"
-              />
-              <path
-                d="M21.0001 14.5C21.0001 15.3284 20.3285 16 19.5001 16C18.6717 16 18.0001 15.3284 18.0001 14.5C18.0001 13.6716 18.6717 13 19.5001 13C20.3285 13 21.0001 13.6716 21.0001 14.5Z"
-                fill="#fff"
-              />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M16.0001 3.75C14.4058 3.75 12.9023 4.41221 11.5917 5.393C10.2774 6.37655 9.08867 7.72923 8.09082 9.25104C6.10609 12.278 4.75011 16.1715 4.75011 19.6364C4.75011 23.197 6.18858 25.6839 8.42598 27.2286C10.5924 28.7242 13.3779 29.25 16.0001 29.25C18.6224 29.25 21.4078 28.7242 23.5742 27.2286C25.8116 25.6839 27.2501 23.197 27.2501 19.6364C27.2501 16.1715 25.8941 12.278 23.9094 9.25104C22.9116 7.72923 21.7228 6.37655 20.4085 5.393C19.098 4.41221 17.5945 3.75 16.0001 3.75ZM7.25011 19.6364C7.25011 16.75 8.40885 13.3253 10.1815 10.6219C11.0623 9.2785 12.0629 8.16295 13.0896 7.39457C14.12 6.62343 15.1092 6.25 16.0001 6.25C16.891 6.25 17.8802 6.62343 18.9106 7.39457C19.9373 8.16295 20.9379 9.2785 21.8187 10.6219C23.5914 13.3253 24.7501 16.75 24.7501 19.6364C24.7501 22.427 23.6739 24.1219 22.1539 25.1712C20.791 26.1122 18.9704 26.5996 17.0001 26.72V23.067C17.2257 22.9368 17.4307 22.7589 17.5998 22.5334L18.5998 21.2C19.5887 19.8816 18.6479 18 16.9998 18H14.9998C13.3517 18 12.411 19.8816 13.3998 21.2L14.3998 22.5334C14.5691 22.7591 14.7743 22.9371 15.0001 23.0673V26.72C13.0298 26.5996 11.2093 26.1122 9.84632 25.1712C8.32636 24.1219 7.25011 22.427 7.25011 19.6364ZM16.9998 20L15.9998 21.3334L14.9998 20H16.9998Z"
-                fill="#fff"
-              /></svg
-          ></span>
-          <span>I wanna Adopt!</span>
-          </a>
-        <button class="modal-cancel">
-          <span
-            ><svg
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M20.7076 25.2926C20.8005 25.3855 20.8742 25.4958 20.9244 25.6172C20.9747 25.7386 21.0006 25.8687 21.0006 26.0001C21.0006 26.1315 20.9747 26.2616 20.9244 26.383C20.8742 26.5044 20.8005 26.6147 20.7076 26.7076C20.6146 26.8005 20.5043 26.8742 20.383 26.9245C20.2616 26.9747 20.1314 27.0006 20.0001 27.0006C19.8687 27.0006 19.7386 26.9747 19.6172 26.9245C19.4958 26.8742 19.3855 26.8005 19.2926 26.7076L9.29255 16.7076C9.19958 16.6147 9.12582 16.5044 9.07549 16.383C9.02517 16.2616 8.99927 16.1315 8.99927 16.0001C8.99927 15.8687 9.02517 15.7385 9.07549 15.6171C9.12582 15.4957 9.19958 15.3854 9.29255 15.2926L19.2926 5.29257C19.4802 5.10493 19.7347 4.99951 20.0001 4.99951C20.2654 4.99951 20.5199 5.10493 20.7076 5.29257C20.8952 5.48021 21.0006 5.7347 21.0006 6.00007C21.0006 6.26543 20.8952 6.51993 20.7076 6.70757L11.4138 16.0001L20.7076 25.2926Z"
-                fill="white"
-              /></svg
-          ></span>
-          <span>Cancel</span>
-        </button>
-      </div>
     </article>
     <!-- modal donate start -->
 
@@ -633,22 +645,26 @@
 
       <form class="form-donate-dialog">
         <div>
-          <label for="emailDnt" class="donate-label">Email <span>*</span></label>
-          <input type="email" id="emailDnt" />
+          <label for="emailDnt" class="donate-label"
+            >Email <span>*</span></label
+          >
+          <input type="email" id="emailDnt" placeholder="your email" required/>
         </div>
         <div>
-          <label for="value" class="donate-label">HOW MUCH CAN YOU HELP? <span>*</span></label>
-          <input type="text" id="value" />
+          <label for="value" class="donate-label"
+            >HOW MUCH CAN YOU HELP? <span>*</span></label
+          >
+          <input type="number" id="value" placeholder="R$ 95,00" required/>
         </div>
 
         <section class="donate-btns-container">
           <h3>PAYMENT METHOD<span>*</span></h3>
-          
+
           <div class="payment-container-donate">
             <!-- pix -->
             <div class="payment-content">
               <input type="radio" name="payment" id="pix" />
-              <label for="pix" class="payment-uncheck payment-checked ">
+              <label for="pix" class="payment-uncheck payment-checked">
                 pix
                 <span id="check">
                   <svg
@@ -666,27 +682,31 @@
               ></label>
             </div>
             <!-- credit card -->
-            <div class="payment-content ">
+            <div class="payment-content">
               <input type="radio" name="payment" id="credit-card" />
-              <label for="credit-card" class="payment-uncheck payment-checked ">
-                credit <br> card
-                <span id="check"></span
+              <label for="credit-card" class="payment-uncheck payment-checked">
+                credit <br />
+                card <span id="check"></span
               ></label>
             </div>
             <!-- paypal -->
             <div class="payment-content">
               <input type="radio" name="payment" id="paypal" />
-              <label for="paypal" class="payment-uncheck payment-checked ">
+              <label for="paypal" class="payment-uncheck payment-checked">
                 paypal
                 <span id="check"></span
               ></label>
             </div>
-
           </div>
 
           <div class="buttons-donate-container">
             <!-- button help -->
-            <a class="dialog-donate" id="navigate-help" href="pages/success.html" type="submit">
+            <a
+              class="dialog-donate"
+              id="navigate-help"
+              href="pages/success.html"
+              type="submit"
+            >
               <img src="img/heart-svg.svg" alt="" />
               <span>I wanna Help!</span>
             </a>

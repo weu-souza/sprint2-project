@@ -1,18 +1,30 @@
 footer {
-  display: flex;
-  padding: 80px;
-  margin: 0 auto;
-  flex-flow: column wrap;
   max-width: 1200px;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
   gap: 60px;
+
+  margin: 0 auto;
+}
+.footer-links {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 40px;
 }
 
 .footer-separator {
   border-bottom: 2px solid #000;
-  padding-bottom: 60px;
-  padding-top: 60px;
-  display: flex;
-  justify-content: space-between;
+}
+.logo-footer-container {
+  flex: 1 1 100px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #1e1f27;
+  gap: 19px;
 }
 .logo-footer-container h2 {
   font-family: Poppins;
@@ -21,27 +33,18 @@ footer {
   line-height: 36px;
   text-align: left;
   color: #1e1f27;
-  margin-bottom: 10px;
-}
-
-.logo-footer-container {
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 32px;
-  text-align: left;
-  color: #1e1f27;
 }
 
 .link-footer-container {
-  width: 50%;
+  flex: 1 1 auto;
   display: flex;
   justify-content: space-evenly;
+  gap: 16px;
 }
 .link-footer-container ul {
   display: flex;
+  gap: 16px;
   flex-flow: column;
-  justify-content: space-between;
 }
 .link-footer-container ul li {
   font-family: Inter;
@@ -52,36 +55,58 @@ footer {
 }
 
 .contatos-footer-container {
-  grid-template-rows: 1fr 1fr 1fr auto;
+  flex: 1 1 100px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
 }
 .contatos-footer-container p {
   display: flex;
-  margin: 0 auto;
   font-family: Inter;
   font-size: 20px;
   font-weight: 700;
   line-height: 32px;
-  text-align: lecft;
-  margin-bottom: 24px;
+  gap: 17px;
 }
 
 .contatos-footer-container p svg {
-  margin-right: 17px;
   align-self: center;
 }
 
 .footer-social-media {
   display: flex;
+  gap: 25px;
 }
-.footer-social-media img {
-  margin-right: 25px;
-}
-
-.title-footer h3 {
+footer h3 {
   font-family: Poppins;
   font-size: 32px;
   font-weight: 700;
   line-height: 51.2px;
   letter-spacing: -0.02em;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  footer {
+    max-width: 700px;
+    padding: 80px 16px;
+  }
+  .logo-footer-container {
+    flex: 1 1 auto;
+    display: grid;
+    justify-content: center;
+  }
+
+  .contatos-footer-container {
+    flex: 1 1 auto;
+    padding-left: 30px;
+  }
+}
+@media (max-width: 500px) {
+  footer {
+    max-width: 430px;
+  }
+  .footer-social-media {
+    justify-content: center;
+  }
 }

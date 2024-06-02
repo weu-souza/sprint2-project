@@ -106,6 +106,9 @@
   .stats-block{
     max-width: 700px;
   }
+  .carousel-mobile{
+    display: none;
+  }
 }
 
 
@@ -113,4 +116,5 @@
   .stats-block{
     max-width: 498px;
   }
+  
 }

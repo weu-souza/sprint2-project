@@ -1,7 +1,5 @@
 let donate = document.querySelectorAll(".btn-donate");
 let adopt = document.querySelectorAll(".adopt-click");
-let terms = document.getElementById("agree-terms");
-let labelRadio = document.querySelector(".agre-container label");
 let dialogAdapt = document.querySelector(".dialog-adapt-container");
 let dialogDonate = document.querySelector(".dialog-donate-container");
 
@@ -24,14 +22,6 @@ export function diag() {
       showDialogAdapt();
     });
   }
-  // agree with privacy policy active desactive
-  terms.addEventListener("click", () => {
-    if (terms.checked) {
-      labelRadio.style.backgroundColor = "#04C27F";
-    } else {
-      labelRadio.style.backgroundColor = "#37383f";
-    }
-  });
   // close dialog adopt
   document.querySelector(".modal-cancel").addEventListener("click", () => {
     closeDialogAdapt();
@@ -47,7 +37,7 @@ function showDialogAdapt() {
 function closeDialogAdapt() {
   setTimeout(() => {
     dialogAdapt.classList.add("hide");
-  }, 400);
+  }, 200);
   dialogAdapt.classList.remove("dialog-open");
   dialogAdapt.classList.add("dialog-closed");
 }
@@ -61,7 +51,7 @@ function showDialogDonate() {
 function closedDialogDonate() {
   setTimeout(() => {
     dialogDonate.classList.add("hide");
-  }, 400);
+  }, 200);
   dialogDonate.classList.remove("dialog-open-donate");
   dialogDonate.classList.add("dialog-closed-donate");
 }
