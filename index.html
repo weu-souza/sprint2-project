@@ -118,7 +118,6 @@
               </button>
               <!-- adopt button end -->
             </div>
-            +
             <!-- end buttons -->
           </div>
         </section>
@@ -643,7 +642,7 @@
     <article class="dialog-donate-container hide">
       <h2>Choose your Donate</h2>
 
-      <form class="form-donate-dialog">
+      <form action="/pages/success.html" method="post" class="form-donate-dialog" >
         <div>
           <label for="emailDnt" class="donate-label"
             >Email <span>*</span></label
@@ -701,15 +700,14 @@
 
           <div class="buttons-donate-container">
             <!-- button help -->
-            <a
+            <button
               class="dialog-donate"
               id="navigate-help"
-              href="pages/success.html"
               type="submit"
             >
               <img src="img/heart-svg.svg" alt="" />
               <span>I wanna Help!</span>
-            </a>
+          </button>
             <!-- button cancel -->
             <button class="dialog-cancel">
               <img src="img/backIcon.svg" alt="" />

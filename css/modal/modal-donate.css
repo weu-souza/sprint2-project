@@ -1,7 +1,6 @@
 .dialog-donate-container {
   max-width: 480px;
   position: fixed;
-  margin: auto;
   top: 5%;
   right: 0;
   padding: 32px;
@@ -36,7 +35,6 @@
 .form-donate-dialog .donate-label span {
   color: #3f96fc;
 }
-
 .form-donate-dialog input[type="number"],
 .form-donate-dialog input[type="email"] {
   padding: 16px;

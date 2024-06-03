@@ -1,7 +1,6 @@
 .dialog-adapt-container {
   max-width: 480px;
   position: fixed;
-  margin: auto;
   top: 5%;
   right: 0;
   padding: 32px;
