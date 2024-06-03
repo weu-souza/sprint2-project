@@ -14,6 +14,7 @@ export function carouselBtns() {
       if (i === index) {
         dots.forEach((j) => j.classList.remove("dots-active"));
         dots.forEach((j) => j.classList.remove("slide-right"));
+        dots.forEach((j) => j.classList.remove("slide-left"));
         dots[index].classList.add("slide-right");
         dots[index].classList.add("dots-active");
         changeImg(i);
@@ -30,6 +31,7 @@ export function carouselBtns() {
       if (i === index) {
         dots.forEach((j) => j.classList.remove("dots-active"));
         dots.forEach((j) => j.classList.remove("slide-left"));
+        dots.forEach((j) => j.classList.remove("slide-right"));
         dots[index].classList.add("slide-left");
         dots[index].classList.add("dots-active");
         changeImg(i);

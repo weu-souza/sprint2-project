@@ -18,11 +18,9 @@
   letter-spacing: -0.02em;
   text-align: center;
 }
-
 .form-donate-dialog div {
   display: grid;
 }
-
 .form-donate-dialog .donate-label {
   font-family: Poppins;
   font-size: 12px;

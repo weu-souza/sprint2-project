@@ -21,39 +21,30 @@
 input {
   outline: none;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 a {
   text-decoration: none;
 }
-
 img {
   display: block;
   max-width: 100%;
 }
-
-/* hide mobile components */
-
+/* hide some components */
 .hide {
   display: none;
 }
-
-/* replace background color of some one components */
+/* replace background color of some components */
 .separator {
   background: #000;
 }
 /* remove arrow of input type number  */
-input[type="number"]{
+input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
 }
-input[type=number]::-webkit-inner-spin-button { 
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  
 }
-
-

@@ -3,44 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- links fonts  -->
-    <!-- inter -->
+    <title>Success</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- arquivo main css -->
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <header>
-      <!-- Logo and menu: left options -->
       <nav>
-        <!-- logo is here -->
         <img
           src="/img/Logotype.png"
           alt="logo do site, um cachorro e um gato"
-          F
         />
-        <!-- navigation is here -->
         <ul class="navigation">
           <li><a href="/">Rescue center</a></li>
           <li><a href="/">Apply to adopt</a></li>
@@ -49,9 +39,7 @@
           <li><a href="/">Events</a></li>
         </ul>
       </nav>
-      <!--  button and phone: right options-->
       <section class="header-end">
-        <!-- phone is here -->
         <section class="phone">
           <img
             src="/img/tell-svg.svg"
@@ -61,7 +49,6 @@
           />
           <p>631-249-7325</p>
         </section>
-        <!-- button is here -->
         <button class="btn-donate">
           <img src="/img/heart-svg.svg" alt="icone de um coração" />
           <span>donate</span>
@@ -69,7 +56,6 @@
       </section>
     </header>
     <div class="divider"></div>
-
     <main>
       <article class="succses-content">
         <div class="button-back-success-container">
@@ -85,12 +71,9 @@
         </div>
       </article>
     </main>
-
-    <!-- start footer -->
     <div style="background-color: #f5f5f5">
       <footer>
-        <article class="footer-separator">
-          <!-- footer logo container start -->
+        <article class="footer-links">
           <section class="logo-footer-container">
             <img src="/img/Logotype.png" width="93px" height="93px" />
             <h2>
@@ -111,9 +94,6 @@
             </h2>
             <p>Helps Save Lives</p>
           </section>
-
-          <!-- footer logo container end -->
-          <!-- footer links start -->
           <section class="link-footer-container">
             <ul>
               <li>Adopt a Pet</li>
@@ -132,9 +112,6 @@
               <li>Shop With Purpose</li>
             </ul>
           </section>
-          <!-- footer link end -->
-          <!-- footer contatos start -->
-
           <section class="contatos-footer-container">
             <p>
               <svg
@@ -160,8 +137,7 @@
                 height="18"
                 viewBox="0 0 18 18"
                 fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   fill-rule="evenodd"
                   clip-rule="evenodd"
@@ -190,7 +166,6 @@
               </svg>
               pet_home@gmail.com
             </p>
-
             <div class="footer-social-media">
               <a><img src="/img/footer/Icon_Twitter.svg" alt="" /></a>
               <a><img src="/img/footer/Icon_WhatsApp.svg" alt="" /></a>
@@ -198,41 +173,35 @@
             </div>
           </section>
         </article>
-        <section class="title-footer">
-          <h3>
-            ​We are not just a rescue,
-            <span style="color: #ff3d9a">we are a refuge</span>
-          </h3>
+        <div class="footer-separator"></div>
+        <h3>
+          ​We are not just a rescue,
+          <span style="color: #ff3d9a">we are a refuge</span>
+        </h3>
         </section>
       </footer>
     </div>
-    <!-- end footer -->
-    <!-- modal donate start -->
 
     <article class="dialog-donate-container hide">
       <h2>Choose your Donate</h2>
-
-      <form class="form-donate-dialog">
+      <form  method="post" class="form-donate-dialog" id="form-submit">
         <div>
           <label for="emailDnt" class="donate-label"
             >Email <span>*</span></label
           >
-          <input type="email" id="emailDnt" />
+          <input type="email" id="emailDnt" placeholder="your email" required/>
         </div>
         <div>
           <label for="value" class="donate-label"
             >HOW MUCH CAN YOU HELP? <span>*</span></label
           >
-          <input type="text" id="value" />
+          <input type="number" id="value" placeholder="R$ 95,00" required/>
         </div>
-
         <section class="donate-btns-container">
           <h3>PAYMENT METHOD<span>*</span></h3>
-
           <div class="payment-container-donate">
-            <!-- pix -->
             <div class="payment-content">
-              <input type="radio" name="payment" id="pix" />
+              <input type="radio" name="payment" id="pix" required />
               <label for="pix" class="payment-uncheck payment-checked">
                 pix
                 <span id="check">
@@ -250,36 +219,30 @@
                     /></svg></span
               ></label>
             </div>
-            <!-- credit card -->
             <div class="payment-content">
-              <input type="radio" name="payment" id="credit-card" />
+              <input type="radio" name="payment" id="credit-card" required/>
               <label for="credit-card" class="payment-uncheck payment-checked">
                 credit <br />
                 card <span id="check"></span
               ></label>
             </div>
-            <!-- paypal -->
             <div class="payment-content">
-              <input type="radio" name="payment" id="paypal" />
+              <input type="radio" name="payment" id="paypal" required/>
               <label for="paypal" class="payment-uncheck payment-checked">
                 paypal
                 <span id="check"></span
               ></label>
             </div>
           </div>
-
           <div class="buttons-donate-container">
-            <!-- button help -->
-            <a
+            <button 
               class="dialog-donate"
               id="navigate-help"
-              href="/pages/success.html"
               type="submit"
             >
               <img src="/img/heart-svg.svg" alt="" />
               <span>I wanna Help!</span>
-            </a>
-            <!-- button cancel -->
+          </button>
             <button class="dialog-cancel">
               <img src="/img/backIcon.svg" alt="" />
               <span>Cancel</span>
@@ -289,5 +252,5 @@
       </form>
     </article>
   </body>
-  <script type="module" src="/js/dialog/dialog.js"></script>
+  <script type="module" src="/js/index.js"></script>
 </html>

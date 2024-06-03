@@ -3,43 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto-semana-4</title>
-
-    <!-- links fonts  -->
-    <!-- inter -->
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- arquivo main css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- header component -->
-
-    <header>
-      <!-- Logo and menu: left options -->
+     <header>
       <nav>
-        <!-- logo is here -->
         <img src="img/Logotype.png" alt="logo do site, um cachorro e um gato" />
-        <!-- navigation is here -->
         <ul class="navigation">
           <li><a href="#">Rescue center</a></li>
           <li><a href="#">Apply to adopt</a></li>
@@ -48,9 +30,7 @@
           <li><a href="#">Events</a></li>
         </ul>
       </nav>
-      <!--  button and phone: right options-->
       <section class="header-end">
-        <!-- phone is here -->
         <section class="phone">
           <img
             src="img/tell-svg.svg"
@@ -60,7 +40,6 @@
           />
           <p>631-249-7325</p>
         </section>
-        <!-- button is here -->
         <button class="btn-donate">
           <img src="img/heart-svg.svg" alt="icone de um coração" />
           <span>donate</span>
@@ -68,33 +47,21 @@
       </section>
     </header>
     <div class="divider"></div>
-
-    <!-- main component -->
     <main>
-      <!-- main screen component -->
-
       <article class="main-screen">
         <section class="info-block">
-          <!-- here is main title -->
           <h1>Forever Homes Shelter</h1>
-          <!-- here is the text -->
           <p>
             Our mission is to rescue and provide rehabilitation to dogs and cats
             that are critically injured or neglected. We have already saved the
             lives of 10,000 animals. We are not just a rescue, we are a refuge.
           </p>
-
           <div class="img-container" id="dog-image">
-            <!-- src="img/Dog_Img.png" -->
             <img src="img/Dog_Img.png" alt="imagem de um pug com fundo azul" />
           </div>
-
           <div class="cat-block">
-            <!-- second title is here -->
             <h2>Your Gift Helps Save Lives</h2>
-            <!-- here is 2  buttons -->
             <div class="main-screen-buttons-container">
-              <!-- donate button start -->
               <button class="btn-donate">
                 <img
                   src="img/heart-svg.svg"
@@ -104,9 +71,6 @@
                 />
                 <span>Donate</span>
               </button>
-              <!-- donate button end -->
-
-              <!-- adopt button start -->
               <button class="adopt-button adopt-click">
                 <img
                   src="img/dog-icon.svg"
@@ -116,52 +80,37 @@
                 />
                 <span>Apply to Adopt</span>
               </button>
-              <!-- adopt button end -->
             </div>
-            <!-- end buttons -->
           </div>
         </section>
-        <!-- cat and dog image is here -->
         <div class="img-container" id="cat-image">
-          <!-- src="img/cat-dog.png" -->
           <img
             src="img/cat-dog.png"
             alt="imagem de um gato amarelo rajado e um cachorro pug e o gato está pensando em sua casa"
           />
         </div>
       </article>
-
-      <!-- end main screen component -->
-      <!-- start stats block component -->
-
       <div class="separator">
         <article class="stats-block">
           <h2>With your help, we accomplished these goals</h2>
-
           <section class="stats">
-            <!-- text 1 -->
             <div>
               <h3>1400</h3>
               <p>Animals Rescued</p>
             </div>
-            <!-- text 2 -->
             <div>
               <h3>$1.4 Million</h3>
               <p>Raised</p>
             </div>
-            <!-- text 3 -->
             <div>
               <h3>940</h3>
               <p>Tails Found a Home</p>
             </div>
           </section>
-
           <section class="carousel">
-            <!-- button carrousel -->
             <button id="button-left-carousel">
               <img src="img/left-carousel-button.svg" alt="" />
             </button>
-            <!-- carousel-imgs -->
             <div id="imgs-carousel">
               <img
                 src="img/carousel-imgs/5.png"
@@ -188,12 +137,10 @@
                 height="200px"
               />
             </div>
-            <!-- button carousel -->
             <button id="button-right-carousel">
               <img src="img/right-carousel-button.svg" alt="" />
             </button>
           </section>
-          <!-- dots -->
           <section class="dots-container">
             <div id="dots" class="dots-active"></div>
             <div id="dots"></div>
@@ -202,13 +149,9 @@
             <div id="dots"></div>
           </section>
         </article>
-        <!-- end stats block component -->
-        <!-- start donation block component -->
-
         <article class="donation-block">
           <h2>With your donations we provide</h2>
           <section class="card-container">
-            <!-- card 1 -->
             <div class="card">
               <div class="card-title">
                 <h3>Shelter</h3>
@@ -220,7 +163,6 @@
                 electricity, and general maintenance.
               </p>
             </div>
-            <!-- card 2 -->
             <div class="card">
               <div class="card-title">
                 <h3>Vetting</h3>
@@ -232,7 +174,6 @@
                 spay/neuter procedures, and other surgeries.
               </p>
             </div>
-            <!-- card 3 -->
             <div class="card">
               <div class="card-title">
                 <h3>Facilities</h3>
@@ -245,7 +186,6 @@
                 potential.
               </p>
             </div>
-            <!-- card 4 -->
             <div class="card">
               <div class="card-title">
                 <h3>Transport</h3>
@@ -257,7 +197,6 @@
                 our shelter, providing them with a second chance at life.
               </p>
             </div>
-            <!-- card 5 -->
             <div class="card">
               <div class="card-title">
                 <h3>Fosters</h3>
@@ -269,7 +208,6 @@
                 needs and provide necessary food supplies.
               </p>
             </div>
-            <!-- card 6-->
             <div class="card">
               <div class="card-title">
                 <h3>Food</h3>
@@ -281,13 +219,9 @@
                 and keep them content and thriving.
               </p>
             </div>
-            <!-- end card  -->
           </section>
         </article>
       </div>
-
-      <!-- end donation block component -->
-      <!-- start adopt info block -->
       <article class="adopt-info-block">
         <h2>Adoption information</h2>
         <section class="content-block">
@@ -319,8 +253,6 @@
           </div>
         </section>
       </article>
-      <!-- end adopt info block -->
-      <!-- start diference block -->
       <div class="separator">
         <article class="diference-block">
           <section class="diference-title-container">
@@ -332,7 +264,6 @@
             />
           </section>
           <section class="diference-card-container">
-            <!-- card 1 -->
             <div class="diference-card">
               <h3>Adopt or Foster</h3>
               <p>Provide a forever or temporary home to a homeless animal.</p>
@@ -340,7 +271,6 @@
                 >View Adoptables</a
               >
             </div>
-            <!-- card 2 -->
             <div class="diference-card">
               <h3>Volunteer</h3>
               <p>
@@ -348,7 +278,6 @@
               </p>
               <button class="bg-yellow">Get Involved</button>
             </div>
-            <!-- card 3 -->
             <div class="diference-card">
               <h3>Donate Monthly</h3>
               <p>
@@ -356,7 +285,6 @@
               </p>
               <button class="bg-pink">Give Monthly</button>
             </div>
-            <!-- card 4 -->
             <div class="diference-card">
               <h3>Start a Fundraiser</h3>
               <p>
@@ -367,16 +295,10 @@
             </div>
           </section>
         </article>
-        <!-- end diference block -->
-
-        <!-- start adopt block -->
         <article class="adopt-block">
-          <!-- header adopt block -->
-
           <div class="adopt-block-img">
             <img src="img/adopt-block/cat-img.png" alt="" />
           </div>
-          <!-- boddy adopt block -->
           <section class="adopt-body-container">
             <h2>Find your <span>best friend</span> today!</h2>
             <div class="adopt-text-btn">
@@ -395,9 +317,7 @@
             <img src="img/adopt-block/dog-img.png" alt="" />
           </div>
         </article>
-        <!-- end adopt block -->
       </div>
-      <!-- start subscription block -->
       <div class="bg-purple">
         <article class="subscription-block">
           <section class="text-container">
@@ -413,14 +333,10 @@
           </form>
         </article>
       </div>
-      <!-- end subscription block -->
     </main>
-
-    <!-- start footer -->
     <div style="background-color: #f5f5f5">
       <footer>
         <article class="footer-links">
-          <!-- footer logo container start -->
           <section class="logo-footer-container">
             <img src="img/Logotype.png" width="93px" height="93px" />
             <h2>
@@ -441,9 +357,6 @@
             </h2>
             <p>Helps Save Lives</p>
           </section>
-
-          <!-- footer logo container end -->
-          <!-- footer links start -->
           <section class="link-footer-container">
             <ul>
               <li>Adopt a Pet</li>
@@ -462,9 +375,6 @@
               <li>Shop With Purpose</li>
             </ul>
           </section>
-          <!-- footer link end -->
-          <!-- footer contatos start -->
-
           <section class="contatos-footer-container">
             <p>
               <svg
@@ -520,7 +430,6 @@
               </svg>
               pet_home@gmail.com
             </p>
-
             <div class="footer-social-media">
               <a><img src="img/footer/Icon_Twitter.svg" alt="" /></a>
               <a><img src="img/footer/Icon_WhatsApp.svg" alt="" /></a>
@@ -528,25 +437,20 @@
             </div>
           </section>
         </article>
-        <!-- end links -->
         <div class="footer-separator"></div>
         <h3>
-          ​We are not just a rescue,
+         We are not just a rescue,
           <span style="color: #ff3d9a">we are a refuge</span>
         </h3>
         </section>
       </footer>
     </div>
-    <!-- end footer -->
-
-    <!-- modal adopt start -->
     <article class="dialog-adapt-container hide">
       <section class="dialog-adapt-title">
         <h2>Apply to Adopt</h2>
         <p>Small text description can goes here</p>
       </section>
-
-      <form class="form-adopt-container" id="form-adopt" >
+      <form class="form-adopt-container" id="form-submit" >
         <div>
           <label for="email">EMAIL<span>*</span></label>
           <input type="email" id="email" placeholder="Your email" required />
@@ -555,14 +459,11 @@
           <label for="fullName">FULL NAME <span>*</span></label>
           <input type="text" id="fullName" placeholder="Your name" required />
         </div>
-        <!-- date area -->
         <div>
           <label for="date">DATE OF BIRTH <span>*</span></label>
           <input type="date" id="date" required />
         </div>
-        
         <div class="modal-button-container">
-          <!-- terms area -->
           <div class="agre-container">
             <label for="agree-terms" >
               <input type="checkbox" id="agree-terms" name="terms of conditions" required/>
@@ -575,9 +476,7 @@
               >
             </p>
           </label>
-            
           </div>
-  
           <button class="modal-adopt success-page-navig" >
             <span class="dog-modal">
               <svg
@@ -635,12 +534,9 @@
         </div>
       </form>
     </article>
-    <!-- modal donate start -->
-
     <article class="dialog-donate-container hide">
       <h2>Choose your Donate</h2>
-
-      <form  method="post" class="form-donate-dialog" id="donate-submit">
+      <form  method="post" class="form-donate-dialog" id="form-submit">
         <div>
           <label for="emailDnt" class="donate-label"
             >Email <span>*</span></label
@@ -653,12 +549,9 @@
           >
           <input type="number" id="value" placeholder="R$ 95,00" required/>
         </div>
-
         <section class="donate-btns-container">
           <h3>PAYMENT METHOD<span>*</span></h3>
-
           <div class="payment-container-donate">
-            <!-- pix -->
             <div class="payment-content">
               <input type="radio" name="payment" id="pix" required />
               <label for="pix" class="payment-uncheck payment-checked">
@@ -678,7 +571,6 @@
                     /></svg></span
               ></label>
             </div>
-            <!-- credit card -->
             <div class="payment-content">
               <input type="radio" name="payment" id="credit-card" required/>
               <label for="credit-card" class="payment-uncheck payment-checked">
@@ -686,7 +578,6 @@
                 card <span id="check"></span
               ></label>
             </div>
-            <!-- paypal -->
             <div class="payment-content">
               <input type="radio" name="payment" id="paypal" required/>
               <label for="paypal" class="payment-uncheck payment-checked">
@@ -695,9 +586,7 @@
               ></label>
             </div>
           </div>
-
           <div class="buttons-donate-container">
-            <!-- button help -->
             <button 
               class="dialog-donate"
               id="navigate-help"
@@ -706,7 +595,6 @@
               <img src="img/heart-svg.svg" alt="" />
               <span>I wanna Help!</span>
           </button>
-            <!-- button cancel -->
             <button class="dialog-cancel">
               <img src="img/backIcon.svg" alt="" />
               <span>Cancel</span>
@@ -715,7 +603,6 @@
         </section>
       </form>
     </article>
-    <!-- end modals -->
     <script type="module" src="js/index.js"></script>
   </body>
 </html>

@@ -1,27 +1,21 @@
-/* Menu*/
 header {
   display: flex;
   flex-flow: row wrap;
   max-width: 1200px;
-  align-items: center;
-  height: 120px;
   justify-content: space-between;
-  align-content: center;
   margin: 0 auto;
+  padding: 44px 0;
 }
-/* divider */
 .divider {
   max-width: 1200px;
   border: 1px solid #000;
-  margin: 0 auto 60px auto;
+  margin: 0 auto;
 }
-/* left option */
 nav {
   display: flex;
   flex-flow: row wrap;
   gap: 16px;
 }
-/* menu option */
 .navigation {
   display: flex;
   flex-flow: row wrap;
@@ -37,8 +31,6 @@ nav {
   line-height: 20px;
   font-weight: 700;
 }
-/* right option */
-
 .header-end {
   display: flex;
   width: 393px;
@@ -48,8 +40,6 @@ nav {
   align-items: center;
   align-content: center;
 }
-/* phone is here */
-
 .phone {
   display: flex;
   flex-flow: row nowrap;
@@ -69,7 +59,6 @@ nav {
   text-align: left;
   color: #000;
 }
-/* button is here */
 .btn-donate {
   border: none;
   display: flex;
@@ -92,39 +81,20 @@ nav {
   text-align: left;
   color: #fff;
 }
-
-/* ipad */
 @media (max-width: 800px) {
   header {
     max-width: 700px;
-    height: 144px;
-    padding-bottom: 20px;
     justify-content: end;
   }
-
   .divider {
     max-width: 700px;
   }
-
-  nav {
-    justify-content: center;
-    margin-bottom: 10px;
-  }
 }
-/* mobile */
 @media (max-width: 500px) {
   header {
     max-width: 430px;
-    height: 144px;
-    padding-bottom: 50px;
-
-    align-content: space-between;
   }
   .divider {
     max-width: 430px;
-  }
-  nav {
-    justify-content: center;
-    margin-bottom: 10px;
   }
 }

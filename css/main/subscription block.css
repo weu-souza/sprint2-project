@@ -6,8 +6,6 @@
   gap: 60px;
   padding: 80px 0;
 }
-.text-container {
-}
 .text-container h2 {
   font-family: Poppins;
   font-size: 56px;
@@ -43,23 +41,19 @@
   background: none;
   color: rgba(255, 255, 255, 0.5);
   margin-right: 24px;
-  /* input text */
   font-family: Poppins;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;
   text-align: left;
 }
-
 .form-container-subscription input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-
 .form-container-subscription button {
   padding: 16px 32px;
   border-radius: 32px;
   cursor: pointer;
-  /* btn text */
   font-family: Poppins;
   font-size: 16px;
   font-weight: 700;
@@ -67,7 +61,6 @@
   text-align: left;
   color: #1e1f27;
 }
-
 @media (max-width: 800px) {
   .subscription-block {
     gap: 24px;

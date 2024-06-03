@@ -3,14 +3,13 @@
   max-width: 1200px;
   margin: auto;
   gap: 60px;
-  padding: 80px;
+  padding: 80px 0;
   justify-content: center;
 }
 .button-back-adoptable-container {
   display: flex;
   justify-content: center;
 }
-
 .adoptable-page-content h3 {
   font-family: Poppins;
   font-size: 56px;
@@ -20,7 +19,6 @@
   text-align: center;
   color: #fff;
 }
-
 .animals-card {
   display: flex;
   flex-flow: row wrap;
@@ -52,8 +50,6 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-
-  /* text button */
   font-family: Poppins;
   font-size: 20px;
   font-weight: 700;

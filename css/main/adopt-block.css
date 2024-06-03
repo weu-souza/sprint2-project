@@ -4,6 +4,7 @@
   flex-flow: row nowrap;
   max-width: 1200px;
   gap: 60px;
+  padding: 80px 0;
   color: #fff;
 }
 .adopt-block h2 {
@@ -18,12 +19,10 @@
 .adopt-block span {
   color: #f8db46;
 }
-
 .adopt-body-container {
   display: flex;
   flex-flow: column nowrap;
 }
-
 .adopt-text-btn {
   display: flex;
   flex-flow: column nowrap;
@@ -37,13 +36,11 @@
   text-align: center;
   margin-bottom: 60px;
 }
-
 .adopt-button-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
-
 .adopt-button-container button,
 .adopt-button-container a {
   font-family: Poppins;
@@ -60,34 +57,11 @@
   background: #f8db46;
   color: #1e1f27;
 }
-
 .btn-apply-adpt {
   background: none;
   color: #ffffff;
   border: 2px solid #ffffff;
 }
-
 .adopt-block-img {
   align-content: flex-end;
 }
-
-/* @media (max-width: 800px) {
-  .adopt-block{
-    max-width: 700px;
-  }
-  .adopt-block h2{
-   font-size: 20px;
-  }
-
-  .adopt-text-btn{
-    width: 100%;
-  }
-  .adopt-text-btn h3{
-    font-size: 16px;
-  }
-
-  .adopt-button-container button{
-
-  }
-  
-} */
