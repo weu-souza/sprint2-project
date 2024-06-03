@@ -16,11 +16,18 @@ O projeto é uma aplicação web voltada para resgate e adoção de animais de e
 ## ✒Autor
 | Papel                   | Nome                              | Contato                                           | 
 | ----------------------- | --------------------------------- | --------------------------------------------------| 
-| Dev Front               | Weuller Luduvico Meireles Souza   | [weu-souza](https://github.com/weu-souza)         |
+| Dev Front               | Weuller Luduvico Meireles Souza   | [![LinkedIn][linkedin-shield-weuller]][linkedin-url-weuller]        |
 
 <!-- Urls -->
 [linkedin-url-weuller]: https://linkedin.com/in/weuller-souza-6b49aa120/
-[![LinkedIn][linkedin-shield-weuller]][linkedin-url-weuller]
+
+<!-- Shields about the project -->
+[linkedin-shield-weuller]: https://img.shields.io/badge/LinkedIn_weuller-00599E?style=for-the-badge&logo=Linkedin&logoColor=white
+
+
+
+
+
 
 
 
