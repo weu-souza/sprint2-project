@@ -546,7 +546,7 @@
         <p>Small text description can goes here</p>
       </section>
 
-      <form class="form-adopt-container" id="form-adopt">
+      <form class="form-adopt-container" id="form-adopt" >
         <div>
           <label for="email">EMAIL<span>*</span></label>
           <input type="email" id="email" placeholder="Your email" required />
@@ -565,8 +565,7 @@
           <!-- terms area -->
           <div class="agre-container">
             <label for="agree-terms" >
-              <input type="checkbox" id="agree-terms" required/>
-
+              <input type="checkbox" id="agree-terms" name="terms of conditions" required/>
               <span class="check-agree">
             </span> <p class="radio-btn">
               I agree with
@@ -579,7 +578,7 @@
             
           </div>
   
-          <a class="modal-adopt success-page-navig" href="pages/success.html">
+          <button class="modal-adopt success-page-navig" >
             <span class="dog-modal">
               <svg
                 width="32"
@@ -616,7 +615,7 @@
                 /></svg
             ></span>
             <span>I wanna Adopt!</span>
-          </a>
+          </button>
           <button class="modal-cancel">
             <span
               ><svg
@@ -635,14 +634,13 @@
           </button>
         </div>
       </form>
-
     </article>
     <!-- modal donate start -->
 
     <article class="dialog-donate-container hide">
       <h2>Choose your Donate</h2>
 
-      <form action="/pages/success.html" method="post" class="form-donate-dialog" >
+      <form  method="post" class="form-donate-dialog" id="donate-submit">
         <div>
           <label for="emailDnt" class="donate-label"
             >Email <span>*</span></label
@@ -662,7 +660,7 @@
           <div class="payment-container-donate">
             <!-- pix -->
             <div class="payment-content">
-              <input type="radio" name="payment" id="pix" />
+              <input type="radio" name="payment" id="pix" required />
               <label for="pix" class="payment-uncheck payment-checked">
                 pix
                 <span id="check">
@@ -682,7 +680,7 @@
             </div>
             <!-- credit card -->
             <div class="payment-content">
-              <input type="radio" name="payment" id="credit-card" />
+              <input type="radio" name="payment" id="credit-card" required/>
               <label for="credit-card" class="payment-uncheck payment-checked">
                 credit <br />
                 card <span id="check"></span
@@ -690,7 +688,7 @@
             </div>
             <!-- paypal -->
             <div class="payment-content">
-              <input type="radio" name="payment" id="paypal" />
+              <input type="radio" name="payment" id="paypal" required/>
               <label for="paypal" class="payment-uncheck payment-checked">
                 paypal
                 <span id="check"></span
@@ -700,7 +698,7 @@
 
           <div class="buttons-donate-container">
             <!-- button help -->
-            <button
+            <button 
               class="dialog-donate"
               id="navigate-help"
               type="submit"

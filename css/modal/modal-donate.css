@@ -50,36 +50,29 @@
   letter-spacing: -0.02em;
   text-align: left;
 }
-
-input[type="number"]::placeholder{
+input[type="number"]::placeholder {
   text-align: right;
 }
-
 .form-donate-dialog input[type="number"]:focus,
 .form-donate-dialog input[type="email"]:focus {
   outline: #937aff solid 1px;
 }
-
 .form-donate-dialog input[type="radio"] {
-  display: none;
+  opacity: 0;
 }
-
 .donate-btns-container label {
   margin-right: 8px;
 }
-
 .payment-container-donate {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
 input[type="radio"]:checked + .payment-checked {
   display: flex;
   justify-content: space-between;
   background: #3f96fc;
   border-radius: 8px;
   padding: 16px;
-
   color: #ffffff;
   font-family: Poppins;
   font-size: 16px;
@@ -89,7 +82,6 @@ input[type="radio"]:checked + .payment-checked {
   text-align: left;
   align-items: center;
 }
-
 .payment-uncheck {
   display: flex;
   justify-content: space-between;
@@ -97,9 +89,7 @@ input[type="radio"]:checked + .payment-checked {
   border: 1px solid #3f96fc;
   border-radius: 8px;
   padding: 16px;
-
   align-items: center;
-
   font-family: Poppins;
   font-size: 16px;
   font-weight: 500;
@@ -108,20 +98,17 @@ input[type="radio"]:checked + .payment-checked {
   text-align: left;
   color: #37383f;
 }
-
 input[type="radio"]:checked + .payment-checked #check {
-  background-image: url(../../img/payment-checked-icon.svg) ;
+  background-image: url(../../img/payment-checked-icon.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #ff3d9a;
-  
   padding: 4px;
   width: 24px;
   height: 24px;
   border-radius: 50%;
   text-align: center;
 }
-
 input[type="radio"]:checked + svg {
   display: inline !important;
 }
@@ -143,13 +130,11 @@ input[type="radio"]:checked + svg {
 .donate-btns-container h3 span {
   color: #3f96fc;
 }
-
 .buttons-donate-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .dialog-donate {
   cursor: pointer;
   border-radius: 32px;
@@ -159,17 +144,14 @@ input[type="radio"]:checked + svg {
   display: flex;
   align-items: center;
   justify-content: center;
-
   font-family: Poppins;
   font-size: 20px;
   font-weight: 700;
   line-height: 32px;
   text-align: left;
   color: #ffffff;
-
   margin: 20px auto;
 }
-
 .dialog-cancel {
   cursor: pointer;
   margin: 0 auto;
@@ -179,7 +161,6 @@ input[type="radio"]:checked + svg {
   justify-content: center;
   gap: 8px;
   background: #37383f;
-
   font-family: Poppins;
   font-size: 20px;
   font-weight: 700;
@@ -187,8 +168,6 @@ input[type="radio"]:checked + svg {
   text-align: left;
   color: #fff;
 }
-
-/* animation open dialog */
 .dialog-open-donate {
   animation: dialog-open-donate 0.2s linear both;
 }
@@ -200,7 +179,6 @@ input[type="radio"]:checked + svg {
     transform: translateX(-120%);
   }
 }
-/* animation close dialog */
 .dialog-closed-donate {
   animation: dialog-closed-donate 0.2s linear both;
 }
@@ -212,7 +190,6 @@ input[type="radio"]:checked + svg {
     transform: translateX(0);
   }
 }
-
 @media (max-width: 800px) {
   .dialog-open-donate {
     animation: dialog-open-donate 0.2s linear both;
@@ -225,7 +202,6 @@ input[type="radio"]:checked + svg {
       transform: translateX(-20%);
     }
   }
-  /* animation close dialog */
   .dialog-closed-donate {
     animation: dialog-closed-donate 0.2s linear both;
   }
@@ -250,7 +226,6 @@ input[type="radio"]:checked + svg {
       transform: translateX(-0%);
     }
   }
-  /* animation close dialog */
   .dialog-closed-donate {
     animation: dialog-closed-donate 0.2s linear both;
   }
