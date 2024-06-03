@@ -20,6 +20,7 @@ O projeto é uma aplicação web voltada para resgate e adoção de animais de e
 
 <!-- Urls -->
 [linkedin-url-weuller]: https://linkedin.com/in/weuller-souza-6b49aa120/
+[![LinkedIn][linkedin-shield-weuller]][linkedin-url-weuller]
 
 
 
